@@ -1,0 +1,303 @@
+{
+  "version": "1.2",
+  "note": "Small functional teaching collection: NASA derivatives plus independently sourced CC0 street photographs. Brightness variants do not establish real night/weather accuracy. Splits use source groups.",
+  "items": [
+    {
+      "id": "astronaut.png",
+      "url": "/assets/datasets/astronaut.png",
+      "split": "validation",
+      "width": 512,
+      "height": 512,
+      "boxes": [
+        {
+          "classId": 0,
+          "label": "person",
+          "x": 27,
+          "y": 6,
+          "width": 408,
+          "height": 506
+        }
+      ],
+      "source": "NASA / scikit-image data.astronaut",
+      "transformation": "Original image; manually annotated teaching bounding box, not COCO benchmark",
+      "sha256": "74d3ec6cca600b36965c09e909769cea633b52668a183f36ad32f45187784441"
+    },
+    {
+      "id": "low-light.png",
+      "url": "/assets/datasets/low-light.png",
+      "split": "test",
+      "width": 512,
+      "height": 512,
+      "boxes": [
+        {
+          "classId": 0,
+          "label": "person",
+          "x": 27,
+          "y": 6,
+          "width": 408,
+          "height": 506
+        }
+      ],
+      "source": "NASA / scikit-image data.astronaut",
+      "transformation": "Brightness ×0.35; same source subject, not an independent real-world dataset",
+      "sha256": "578931f3c765e8c9a41f4eb11ba305ae303c9210394b27018236c70570c9d8cb"
+    },
+    {
+      "id": "occluded.png",
+      "url": "/assets/datasets/occluded.png",
+      "split": "test",
+      "width": 512,
+      "height": 512,
+      "boxes": [
+        {
+          "classId": 0,
+          "label": "person",
+          "x": 27,
+          "y": 6,
+          "width": 408,
+          "height": 506
+        }
+      ],
+      "source": "NASA / scikit-image data.astronaut",
+      "transformation": "Synthetic lower-body occlusion; amodal teaching box",
+      "sha256": "12cf9e558db1a38ff001f1599862de737bbbea6e8936f3553b122d50c9ef9b21"
+    },
+    {
+      "id": "far.png",
+      "url": "/assets/datasets/far.png",
+      "split": "test",
+      "width": 512,
+      "height": 512,
+      "boxes": [
+        {
+          "classId": 0,
+          "label": "person",
+          "x": 198,
+          "y": 178,
+          "width": 128,
+          "height": 158
+        }
+      ],
+      "source": "NASA / scikit-image data.astronaut",
+      "transformation": "Reduced subject at 160×160 on uniform background",
+      "sha256": "4faf06a83d770b5f11865826d1749171e03b0731590f6cfdaf5c0b1afcb92f55"
+    },
+    {
+      "id": "negative.png",
+      "url": "/assets/datasets/negative.png",
+      "split": "validation",
+      "width": 512,
+      "height": 512,
+      "boxes": [],
+      "source": "Original procedural negative sample",
+      "transformation": "Original synthetic empty grid, no person label",
+      "sha256": "999032449457ab0781a2ddeab5cb0014b0c8128be32c312e8f8bff1177ce8c52"
+    },
+    {
+      "id": "street-amsterdam.jpg",
+      "url": "/assets/datasets/street-amsterdam.jpg",
+      "width": 960,
+      "height": 722,
+      "split": "train",
+      "source": "https://commons.wikimedia.org/wiki/File:2023_Amsterdam_poto_-_Woman_are_walking_the_pedestrian_crossing_over_the_city_road_Stadhouderskade_in_early_Spring_sunlight;_free_download_photo_in_high_resolutions_by_Fons_Heijnbroek_,_street_photography_in_The_Netherlands,_CCO.jpg",
+      "author": "Fons Heijnsbroek",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/da/2023_Amsterdam_poto_-_Woman_are_walking_the_pedestrian_crossing_over_the_city_road_Stadhouderskade_in_early_Spring_sunlight%3B_free_download_photo_in_high_resolutions_by_Fons_Heijnbroek_%2C_street_photography_in_The_Netherlands%2C_CCO.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "originalSize": [
+        4985,
+        3751
+      ],
+      "originalSha256": "47483efe8e98d19d0d980dbc4cf7df59f8b4a208d8ba3757c94405a78337ca6a",
+      "sha256": "fbcaebce4582ae97e21630c546096df2613147c91f0d8d085a503d9322aac7bd",
+      "transformation": "Resized to maximum 960px, JPEG recompressed and EXIF removed. Real photograph, not a simulated night/weather image.",
+      "annotationStatus": "visually annotated visible extents; not double-reviewed benchmark",
+      "boxes": [
+        {
+          "classId": 0,
+          "label": "person",
+          "x": 92,
+          "y": 294,
+          "width": 278,
+          "height": 428
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "x": 405,
+          "y": 294,
+          "width": 168,
+          "height": 377
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "x": 585,
+          "y": 272,
+          "width": 164,
+          "height": 432
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "x": 650,
+          "y": 210,
+          "width": 129,
+          "height": 350
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "x": 795,
+          "y": 267,
+          "width": 86,
+          "height": 205
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "x": 858,
+          "y": 271,
+          "width": 83,
+          "height": 204
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "x": 904,
+          "y": 274,
+          "width": 42,
+          "height": 172
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "x": 845,
+          "y": 252,
+          "width": 39,
+          "height": 64
+        }
+      ],
+      "evaluationClassIds": [
+        0
+      ],
+      "sourceGroup": "street-amsterdam.jpg"
+    },
+    {
+      "id": "street-telaviv.jpg",
+      "url": "/assets/datasets/street-telaviv.jpg",
+      "width": 655,
+      "height": 960,
+      "split": "train",
+      "source": "https://commons.wikimedia.org/wiki/File:Tel_aviv_landscape_pedestrian_crosswalk_zebra_crossing_public_domain_19.jpg",
+      "author": "Equalhuman",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/49/Tel_aviv_landscape_pedestrian_crosswalk_zebra_crossing_public_domain_19.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "originalSize": [
+        3070,
+        4498
+      ],
+      "originalSha256": "cb75298ced1020b9632e91f8db5b8303e73e33894006ddf8e76692ac6364a8d5",
+      "sha256": "b0464b03bf00156cb2c10eb13e77b90910fe1022c07ba69685d0c61e872eca90",
+      "transformation": "Resized to maximum 960px, JPEG recompressed and EXIF removed. Real photograph, not a simulated night/weather image.",
+      "annotationStatus": "visually annotated visible extents; not double-reviewed benchmark",
+      "boxes": [],
+      "evaluationClassIds": [
+        0
+      ],
+      "sourceGroup": "street-telaviv.jpg"
+    },
+    {
+      "id": "street-negative.jpg",
+      "url": "/assets/datasets/street-negative.jpg",
+      "width": 960,
+      "height": 720,
+      "split": "test",
+      "source": "https://commons.wikimedia.org/wiki/File:Unmarked_pedestrian_crossing.jpg",
+      "author": "Mateusz Konieczny",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/Unmarked_pedestrian_crossing.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "originalSize": [
+        4000,
+        3000
+      ],
+      "originalSha256": "34926f4b2497a3454d1ea78d6186e17e2f8ac43282f194de637fb799eed838fc",
+      "sha256": "85ffdf75b9424adb5a9cf38c4a98592bc33960eea16dcddc4408dfe097466a19",
+      "transformation": "Resized to maximum 960px, JPEG recompressed and EXIF removed. Real photograph, not a simulated night/weather image.",
+      "annotationStatus": "visually annotated visible extents; not double-reviewed benchmark",
+      "boxes": [],
+      "evaluationClassIds": [
+        0
+      ],
+      "sourceGroup": "street-negative.jpg"
+    },
+    {
+      "id": "street-barcelona-crop.jpg",
+      "url": "/assets/datasets/street-barcelona-crop.jpg",
+      "width": 620,
+      "height": 380,
+      "split": "test",
+      "source": "https://commons.wikimedia.org/wiki/File:Pedestrians_crossing_the_street_in_Barcelona_DSF1442.jpg",
+      "author": "Levi Meir Clancy",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/34/Pedestrians_crossing_the_street_in_Barcelona_DSF1442.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "originalSize": [
+        6240,
+        4160
+      ],
+      "originalSha256": "3776ebf284b2e1f24546805814ce6a4be94803c364f5695a261ef427870ced0f",
+      "sha256": "a9e35fab3f30f07449d3bf57b13491c800664885bb825afbd18b8882bf3876d4",
+      "transformation": "Cropped from independently held-out Barcelona photograph, then upscaled for display. Not a new independent scene or a night image.",
+      "annotationStatus": "visually annotated visible extents; not double-reviewed benchmark",
+      "boxes": [
+        {
+          "classId": 0,
+          "label": "person",
+          "x": 54,
+          "y": 111,
+          "width": 62,
+          "height": 92
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "x": 316,
+          "y": 106,
+          "width": 55,
+          "height": 101
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "x": 399,
+          "y": 165,
+          "width": 61,
+          "height": 98
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "x": 452,
+          "y": 174,
+          "width": 47,
+          "height": 100
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "x": 516,
+          "y": 190,
+          "width": 43,
+          "height": 91
+        }
+      ],
+      "evaluationClassIds": [
+        0
+      ],
+      "sourceGroup": "street-barcelona.jpg"
+    }
+  ]
+}

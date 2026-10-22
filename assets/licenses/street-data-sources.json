@@ -1,0 +1,91 @@
+{
+  "format": "cc0-street-teaching/1",
+  "checkedAt": "2026-10-21",
+  "scope": "Four independently sourced photographs for functional teaching only; no representative road/night/weather accuracy claim. No endorsement by photographers.",
+  "records": [
+    {
+      "id": "street-barcelona.jpg",
+      "url": "/assets/datasets/street-barcelona.jpg",
+      "width": 960,
+      "height": 640,
+      "split": "train",
+      "source": "https://commons.wikimedia.org/wiki/File:Pedestrians_crossing_the_street_in_Barcelona_DSF1442.jpg",
+      "author": "Levi Meir Clancy",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/34/Pedestrians_crossing_the_street_in_Barcelona_DSF1442.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "originalSize": [
+        6240,
+        4160
+      ],
+      "originalSha256": "3776ebf284b2e1f24546805814ce6a4be94803c364f5695a261ef427870ced0f",
+      "sha256": "52a4aa7aef4e1f32d340dcc1fb0051df81e4e151864d5eaa08ee99280d6b6926",
+      "transformation": "Resized to maximum 960px, JPEG recompressed and EXIF removed. Real photograph, not a simulated night/weather image.",
+      "annotationStatus": "pending human visual annotation",
+      "boxes": []
+    },
+    {
+      "id": "street-telaviv.jpg",
+      "url": "/assets/datasets/street-telaviv.jpg",
+      "width": 655,
+      "height": 960,
+      "split": "train",
+      "source": "https://commons.wikimedia.org/wiki/File:Tel_aviv_landscape_pedestrian_crosswalk_zebra_crossing_public_domain_19.jpg",
+      "author": "Equalhuman",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/49/Tel_aviv_landscape_pedestrian_crosswalk_zebra_crossing_public_domain_19.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "originalSize": [
+        3070,
+        4498
+      ],
+      "originalSha256": "cb75298ced1020b9632e91f8db5b8303e73e33894006ddf8e76692ac6364a8d5",
+      "sha256": "b0464b03bf00156cb2c10eb13e77b90910fe1022c07ba69685d0c61e872eca90",
+      "transformation": "Resized to maximum 960px, JPEG recompressed and EXIF removed. Real photograph, not a simulated night/weather image.",
+      "annotationStatus": "pending human visual annotation",
+      "boxes": []
+    },
+    {
+      "id": "street-amsterdam.jpg",
+      "url": "/assets/datasets/street-amsterdam.jpg",
+      "width": 960,
+      "height": 722,
+      "split": "test",
+      "source": "https://commons.wikimedia.org/wiki/File:2023_Amsterdam_poto_-_Woman_are_walking_the_pedestrian_crossing_over_the_city_road_Stadhouderskade_in_early_Spring_sunlight;_free_download_photo_in_high_resolutions_by_Fons_Heijnbroek_,_street_photography_in_The_Netherlands,_CCO.jpg",
+      "author": "Fons Heijnsbroek",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/da/2023_Amsterdam_poto_-_Woman_are_walking_the_pedestrian_crossing_over_the_city_road_Stadhouderskade_in_early_Spring_sunlight%3B_free_download_photo_in_high_resolutions_by_Fons_Heijnbroek_%2C_street_photography_in_The_Netherlands%2C_CCO.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "originalSize": [
+        4985,
+        3751
+      ],
+      "originalSha256": "47483efe8e98d19d0d980dbc4cf7df59f8b4a208d8ba3757c94405a78337ca6a",
+      "sha256": "fbcaebce4582ae97e21630c546096df2613147c91f0d8d085a503d9322aac7bd",
+      "transformation": "Resized to maximum 960px, JPEG recompressed and EXIF removed. Real photograph, not a simulated night/weather image.",
+      "annotationStatus": "pending human visual annotation",
+      "boxes": []
+    },
+    {
+      "id": "street-negative.jpg",
+      "url": "/assets/datasets/street-negative.jpg",
+      "width": 960,
+      "height": 720,
+      "split": "train",
+      "source": "https://commons.wikimedia.org/wiki/File:Unmarked_pedestrian_crossing.jpg",
+      "author": "Mateusz Konieczny",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/Unmarked_pedestrian_crossing.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "originalSize": [
+        4000,
+        3000
+      ],
+      "originalSha256": "34926f4b2497a3454d1ea78d6186e17e2f8ac43282f194de637fb799eed838fc",
+      "sha256": "85ffdf75b9424adb5a9cf38c4a98592bc33960eea16dcddc4408dfe097466a19",
+      "transformation": "Resized to maximum 960px, JPEG recompressed and EXIF removed. Real photograph, not a simulated night/weather image.",
+      "annotationStatus": "pending human visual annotation",
+      "boxes": []
+    }
+  ]
+}

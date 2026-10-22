@@ -1,0 +1,1104 @@
+{
+  "format": "actual-yolox-teaching-finetune/1",
+  "createdAt": "2026-10-21T10:22:02Z",
+  "seed": 42,
+  "sourceCommit": "6ddff4824372906469a7fae2dc3206c7aa4bbaee",
+  "pretrainedSha256": "cd28f55fbbc1829f99d9ac9b38a16d259a22889739c8728ea877610201feff7b",
+  "pretrainedSource": "https://github.com/Megvii-BaseDetection/YOLOX/releases/download/0.1.1rc0/yolox_nano.pth",
+  "sourceLicense": "Apache-2.0, bundled YOLOX LICENSE; photo sources NASA public domain / CC0 recorded separately",
+  "trainingSources": [
+    {
+      "id": "astronaut.png",
+      "sha256": "74d3ec6cca600b36965c09e909769cea633b52668a183f36ad32f45187784441",
+      "group": "astronaut.png"
+    },
+    {
+      "id": "street-amsterdam.jpg",
+      "sha256": "fbcaebce4582ae97e21630c546096df2613147c91f0d8d085a503d9322aac7bd",
+      "group": "street-amsterdam.jpg"
+    },
+    {
+      "id": "street-telaviv.jpg",
+      "sha256": "b0464b03bf00156cb2c10eb13e77b90910fe1022c07ba69685d0c61e872eca90",
+      "group": "street-telaviv.jpg"
+    }
+  ],
+  "heldOutSources": [
+    {
+      "id": "street-barcelona-crop.jpg",
+      "sha256": "a9e35fab3f30f07449d3bf57b13491c800664885bb825afbd18b8882bf3876d4",
+      "group": "street-barcelona.jpg"
+    },
+    {
+      "id": "street-negative.jpg",
+      "sha256": "85ffdf75b9424adb5a9cf38c4a98592bc33960eea16dcddc4408dfe097466a19",
+      "group": "street-negative.jpg"
+    }
+  ],
+  "scope": "Actual head fine-tuning, frozen backbone and BN, 80 output classes. Person-only teaching labels; only person evaluation. Tiny-source functional example, no real night/weather, road generalization or production safety claim. Brightness derivatives remain in the source group; test sources are never trained.",
+  "officialBaseline": {
+    "sha256": "c789161ed43c8269fcd4e67c67eeeb4e80c622da2eb296a20bc6007bd18a0b7d",
+    "heldOutEvaluation": [
+      {
+        "brightness": 1,
+        "image": "street-barcelona-crop.jpg",
+        "sourceGroup": "street-barcelona.jpg",
+        "inputSha256": "a9e35fab3f30f07449d3bf57b13491c800664885bb825afbd18b8882bf3876d4",
+        "tp": 0,
+        "fp": 0,
+        "fn": 5,
+        "precision": 0,
+        "recall": 0.0,
+        "boxes": []
+      },
+      {
+        "brightness": 0.35,
+        "image": "street-barcelona-crop.jpg",
+        "sourceGroup": "street-barcelona.jpg",
+        "inputSha256": "a9e35fab3f30f07449d3bf57b13491c800664885bb825afbd18b8882bf3876d4",
+        "tp": 1,
+        "fp": 2,
+        "fn": 4,
+        "precision": 0.3333333333333333,
+        "recall": 0.2,
+        "boxes": [
+          [
+            504.7677917480469,
+            193.13772583007812,
+            89.92900085449219,
+            179.40553283691406,
+            0.4317825138568878
+          ],
+          [
+            319.0423583984375,
+            108.02239990234375,
+            53.18839645385742,
+            105.77297973632812,
+            0.40958714485168457
+          ],
+          [
+            57.529808044433594,
+            111.00239562988281,
+            88.30986022949219,
+            266.8287658691406,
+            0.35673922300338745
+          ]
+        ]
+      },
+      {
+        "brightness": 1,
+        "image": "street-negative.jpg",
+        "sourceGroup": "street-negative.jpg",
+        "inputSha256": "85ffdf75b9424adb5a9cf38c4a98592bc33960eea16dcddc4408dfe097466a19",
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1,
+        "boxes": []
+      },
+      {
+        "brightness": 0.35,
+        "image": "street-negative.jpg",
+        "sourceGroup": "street-negative.jpg",
+        "inputSha256": "85ffdf75b9424adb5a9cf38c4a98592bc33960eea16dcddc4408dfe097466a19",
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1,
+        "boxes": []
+      }
+    ]
+  },
+  "evaluationSettings": {
+    "classIds": [
+      0
+    ],
+    "confidence": 0.25,
+    "nmsIou": 0.45,
+    "matchIou": 0.5
+  },
+  "durationSeconds": 9.492899656295776,
+  "versions": {
+    "torch": "2.14.1+cpu",
+    "onnx": "1.17.0",
+    "onnxruntime": "1.23.2"
+  },
+  "variants": [
+    {
+      "id": "day-teaching",
+      "path": "/assets/models/yolox_day_teaching.onnx",
+      "sha256": "64e0f02bfcbc6dcfec7a75ac4648c5da89ff00d7152bce036161fdce63a75338",
+      "bytes": 3713972,
+      "optimizer": "SGD",
+      "learningRate": 0.0005,
+      "steps": 60,
+      "changedTensorCount": 99,
+      "onnxMaxAbsError": 0.000255584716796875,
+      "lossLog": [
+        {
+          "step": 1,
+          "image": "astronaut.png",
+          "brightness": 1,
+          "loss": 27.377283096313477,
+          "foreground": 7.0
+        },
+        {
+          "step": 2,
+          "image": "street-amsterdam.jpg",
+          "brightness": 1,
+          "loss": 19.514373779296875,
+          "foreground": 4.5
+        },
+        {
+          "step": 3,
+          "image": "street-telaviv.jpg",
+          "brightness": 1,
+          "loss": 378.86334228515625,
+          "foreground": 1.0
+        },
+        {
+          "step": 4,
+          "image": "astronaut.png",
+          "brightness": 1,
+          "loss": 14.653313636779785,
+          "foreground": 7.0
+        },
+        {
+          "step": 5,
+          "image": "street-amsterdam.jpg",
+          "brightness": 1,
+          "loss": 12.717331886291504,
+          "foreground": 4.5
+        },
+        {
+          "step": 6,
+          "image": "street-telaviv.jpg",
+          "brightness": 1,
+          "loss": 123.61915588378906,
+          "foreground": 1.0
+        },
+        {
+          "step": 7,
+          "image": "astronaut.png",
+          "brightness": 1,
+          "loss": 7.617290019989014,
+          "foreground": 7.0
+        },
+        {
+          "step": 8,
+          "image": "street-amsterdam.jpg",
+          "brightness": 1,
+          "loss": 9.525749206542969,
+          "foreground": 4.75
+        },
+        {
+          "step": 9,
+          "image": "street-telaviv.jpg",
+          "brightness": 1,
+          "loss": 27.404760360717773,
+          "foreground": 1.0
+        },
+        {
+          "step": 10,
+          "image": "astronaut.png",
+          "brightness": 1,
+          "loss": 5.1492838859558105,
+          "foreground": 8.0
+        },
+        {
+          "step": 11,
+          "image": "street-amsterdam.jpg",
+          "brightness": 1,
+          "loss": 9.276737213134766,
+          "foreground": 4.5
+        },
+        {
+          "step": 12,
+          "image": "street-telaviv.jpg",
+          "brightness": 1,
+          "loss": 6.88521671295166,
+          "foreground": 1.0
+        },
+        {
+          "step": 13,
+          "image": "astronaut.png",
+          "brightness": 1,
+          "loss": 4.263851165771484,
+          "foreground": 8.0
+        },
+        {
+          "step": 14,
+          "image": "street-amsterdam.jpg",
+          "brightness": 1,
+          "loss": 10.037178993225098,
+          "foreground": 4.375
+        },
+        {
+          "step": 15,
+          "image": "street-telaviv.jpg",
+          "brightness": 1,
+          "loss": 2.159745454788208,
+          "foreground": 1.0
+        },
+        {
+          "step": 16,
+          "image": "astronaut.png",
+          "brightness": 1,
+          "loss": 3.360405445098877,
+          "foreground": 8.0
+        },
+        {
+          "step": 17,
+          "image": "street-amsterdam.jpg",
+          "brightness": 1,
+          "loss": 10.269617080688477,
+          "foreground": 4.375
+        },
+        {
+          "step": 18,
+          "image": "street-telaviv.jpg",
+          "brightness": 1,
+          "loss": 0.71140456199646,
+          "foreground": 1.0
+        },
+        {
+          "step": 19,
+          "image": "astronaut.png",
+          "brightness": 1,
+          "loss": 3.0987045764923096,
+          "foreground": 8.0
+        },
+        {
+          "step": 20,
+          "image": "street-amsterdam.jpg",
+          "brightness": 1,
+          "loss": 10.193779945373535,
+          "foreground": 4.625
+        },
+        {
+          "step": 21,
+          "image": "street-telaviv.jpg",
+          "brightness": 1,
+          "loss": 0.2812948226928711,
+          "foreground": 1.0
+        },
+        {
+          "step": 22,
+          "image": "astronaut.png",
+          "brightness": 1,
+          "loss": 2.274956703186035,
+          "foreground": 8.0
+        },
+        {
+          "step": 23,
+          "image": "street-amsterdam.jpg",
+          "brightness": 1,
+          "loss": 9.901278495788574,
+          "foreground": 4.875
+        },
+        {
+          "step": 24,
+          "image": "street-telaviv.jpg",
+          "brightness": 1,
+          "loss": 0.13762569427490234,
+          "foreground": 1.0
+        },
+        {
+          "step": 25,
+          "image": "astronaut.png",
+          "brightness": 1,
+          "loss": 2.0678038597106934,
+          "foreground": 8.0
+        },
+        {
+          "step": 26,
+          "image": "street-amsterdam.jpg",
+          "brightness": 1,
+          "loss": 9.483036041259766,
+          "foreground": 5.0
+        },
+        {
+          "step": 27,
+          "image": "street-telaviv.jpg",
+          "brightness": 1,
+          "loss": 0.07956933975219727,
+          "foreground": 1.0
+        },
+        {
+          "step": 28,
+          "image": "astronaut.png",
+          "brightness": 1,
+          "loss": 1.4938923120498657,
+          "foreground": 9.0
+        },
+        {
+          "step": 29,
+          "image": "street-amsterdam.jpg",
+          "brightness": 1,
+          "loss": 8.942362785339355,
+          "foreground": 5.125
+        },
+        {
+          "step": 30,
+          "image": "street-telaviv.jpg",
+          "brightness": 1,
+          "loss": 0.06730937957763672,
+          "foreground": 1.0
+        },
+        {
+          "step": 31,
+          "image": "astronaut.png",
+          "brightness": 1,
+          "loss": 2.2838597297668457,
+          "foreground": 8.0
+        },
+        {
+          "step": 32,
+          "image": "street-amsterdam.jpg",
+          "brightness": 1,
+          "loss": 8.390517234802246,
+          "foreground": 5.125
+        },
+        {
+          "step": 33,
+          "image": "street-telaviv.jpg",
+          "brightness": 1,
+          "loss": 0.05960512161254883,
+          "foreground": 1.0
+        },
+        {
+          "step": 34,
+          "image": "astronaut.png",
+          "brightness": 1,
+          "loss": 1.772843599319458,
+          "foreground": 8.0
+        },
+        {
+          "step": 35,
+          "image": "street-amsterdam.jpg",
+          "brightness": 1,
+          "loss": 7.691802978515625,
+          "foreground": 5.25
+        },
+        {
+          "step": 36,
+          "image": "street-telaviv.jpg",
+          "brightness": 1,
+          "loss": 0.07327127456665039,
+          "foreground": 1.0
+        },
+        {
+          "step": 37,
+          "image": "astronaut.png",
+          "brightness": 1,
+          "loss": 2.112617015838623,
+          "foreground": 8.0
+        },
+        {
+          "step": 38,
+          "image": "street-amsterdam.jpg",
+          "brightness": 1,
+          "loss": 6.828406810760498,
+          "foreground": 5.25
+        },
+        {
+          "step": 39,
+          "image": "street-telaviv.jpg",
+          "brightness": 1,
+          "loss": 0.07859086990356445,
+          "foreground": 1.0
+        },
+        {
+          "step": 40,
+          "image": "astronaut.png",
+          "brightness": 1,
+          "loss": 1.9618680477142334,
+          "foreground": 8.0
+        },
+        {
+          "step": 41,
+          "image": "street-amsterdam.jpg",
+          "brightness": 1,
+          "loss": 6.228372573852539,
+          "foreground": 5.25
+        },
+        {
+          "step": 42,
+          "image": "street-telaviv.jpg",
+          "brightness": 1,
+          "loss": 0.05049896240234375,
+          "foreground": 1.0
+        },
+        {
+          "step": 43,
+          "image": "astronaut.png",
+          "brightness": 1,
+          "loss": 1.6401423215866089,
+          "foreground": 9.0
+        },
+        {
+          "step": 44,
+          "image": "street-amsterdam.jpg",
+          "brightness": 1,
+          "loss": 5.781091690063477,
+          "foreground": 5.375
+        },
+        {
+          "step": 45,
+          "image": "street-telaviv.jpg",
+          "brightness": 1,
+          "loss": 0.03835773468017578,
+          "foreground": 1.0
+        },
+        {
+          "step": 46,
+          "image": "astronaut.png",
+          "brightness": 1,
+          "loss": 1.4029970169067383,
+          "foreground": 9.0
+        },
+        {
+          "step": 47,
+          "image": "street-amsterdam.jpg",
+          "brightness": 1,
+          "loss": 5.3764119148254395,
+          "foreground": 5.75
+        },
+        {
+          "step": 48,
+          "image": "street-telaviv.jpg",
+          "brightness": 1,
+          "loss": 0.031916141510009766,
+          "foreground": 1.0
+        },
+        {
+          "step": 49,
+          "image": "astronaut.png",
+          "brightness": 1,
+          "loss": 1.9802688360214233,
+          "foreground": 8.0
+        },
+        {
+          "step": 50,
+          "image": "street-amsterdam.jpg",
+          "brightness": 1,
+          "loss": 4.933567047119141,
+          "foreground": 5.875
+        },
+        {
+          "step": 51,
+          "image": "street-telaviv.jpg",
+          "brightness": 1,
+          "loss": 0.031868934631347656,
+          "foreground": 1.0
+        },
+        {
+          "step": 52,
+          "image": "astronaut.png",
+          "brightness": 1,
+          "loss": 1.6344410181045532,
+          "foreground": 9.0
+        },
+        {
+          "step": 53,
+          "image": "street-amsterdam.jpg",
+          "brightness": 1,
+          "loss": 4.4614105224609375,
+          "foreground": 5.875
+        },
+        {
+          "step": 54,
+          "image": "street-telaviv.jpg",
+          "brightness": 1,
+          "loss": 0.025986194610595703,
+          "foreground": 1.0
+        },
+        {
+          "step": 55,
+          "image": "astronaut.png",
+          "brightness": 1,
+          "loss": 1.45125412940979,
+          "foreground": 9.0
+        },
+        {
+          "step": 56,
+          "image": "street-amsterdam.jpg",
+          "brightness": 1,
+          "loss": 4.1216044425964355,
+          "foreground": 5.875
+        },
+        {
+          "step": 57,
+          "image": "street-telaviv.jpg",
+          "brightness": 1,
+          "loss": 0.017380714416503906,
+          "foreground": 1.0
+        },
+        {
+          "step": 58,
+          "image": "astronaut.png",
+          "brightness": 1,
+          "loss": 1.090234637260437,
+          "foreground": 9.0
+        },
+        {
+          "step": 59,
+          "image": "street-amsterdam.jpg",
+          "brightness": 1,
+          "loss": 3.850064277648926,
+          "foreground": 5.875
+        },
+        {
+          "step": 60,
+          "image": "street-telaviv.jpg",
+          "brightness": 1,
+          "loss": 0.011777400970458984,
+          "foreground": 1.0
+        }
+      ],
+      "heldOutEvaluation": [
+        {
+          "brightness": 1,
+          "image": "street-barcelona-crop.jpg",
+          "sourceGroup": "street-barcelona.jpg",
+          "inputSha256": "a9e35fab3f30f07449d3bf57b13491c800664885bb825afbd18b8882bf3876d4",
+          "tp": 0,
+          "fp": 0,
+          "fn": 5,
+          "precision": 0,
+          "recall": 0.0,
+          "boxes": []
+        },
+        {
+          "brightness": 0.35,
+          "image": "street-barcelona-crop.jpg",
+          "sourceGroup": "street-barcelona.jpg",
+          "inputSha256": "a9e35fab3f30f07449d3bf57b13491c800664885bb825afbd18b8882bf3876d4",
+          "tp": 0,
+          "fp": 0,
+          "fn": 5,
+          "precision": 0,
+          "recall": 0.0,
+          "boxes": []
+        },
+        {
+          "brightness": 1,
+          "image": "street-negative.jpg",
+          "sourceGroup": "street-negative.jpg",
+          "inputSha256": "85ffdf75b9424adb5a9cf38c4a98592bc33960eea16dcddc4408dfe097466a19",
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1,
+          "boxes": []
+        },
+        {
+          "brightness": 0.35,
+          "image": "street-negative.jpg",
+          "sourceGroup": "street-negative.jpg",
+          "inputSha256": "85ffdf75b9424adb5a9cf38c4a98592bc33960eea16dcddc4408dfe097466a19",
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1,
+          "boxes": []
+        }
+      ]
+    },
+    {
+      "id": "coverage-teaching",
+      "path": "/assets/models/yolox_coverage_teaching.onnx",
+      "sha256": "26516f27c78af598805ee14732e80c521103a10153c1f17dc5fda7585836b55a",
+      "bytes": 3713972,
+      "optimizer": "SGD",
+      "learningRate": 0.0005,
+      "steps": 60,
+      "changedTensorCount": 99,
+      "onnxMaxAbsError": 0.0006096363067626953,
+      "lossLog": [
+        {
+          "step": 1,
+          "image": "astronaut.png",
+          "brightness": 1,
+          "loss": 27.377283096313477,
+          "foreground": 7.0
+        },
+        {
+          "step": 2,
+          "image": "street-amsterdam.jpg",
+          "brightness": 1,
+          "loss": 19.514373779296875,
+          "foreground": 4.5
+        },
+        {
+          "step": 3,
+          "image": "street-telaviv.jpg",
+          "brightness": 1,
+          "loss": 378.86334228515625,
+          "foreground": 1.0
+        },
+        {
+          "step": 4,
+          "image": "astronaut.png",
+          "brightness": 0.35,
+          "loss": 14.029422760009766,
+          "foreground": 6.0
+        },
+        {
+          "step": 5,
+          "image": "street-amsterdam.jpg",
+          "brightness": 0.35,
+          "loss": 10.033904075622559,
+          "foreground": 4.625
+        },
+        {
+          "step": 6,
+          "image": "street-telaviv.jpg",
+          "brightness": 0.35,
+          "loss": 79.27236938476562,
+          "foreground": 1.0
+        },
+        {
+          "step": 7,
+          "image": "astronaut.png",
+          "brightness": 0.65,
+          "loss": 7.874691486358643,
+          "foreground": 7.0
+        },
+        {
+          "step": 8,
+          "image": "street-amsterdam.jpg",
+          "brightness": 0.65,
+          "loss": 8.935297966003418,
+          "foreground": 4.625
+        },
+        {
+          "step": 9,
+          "image": "street-telaviv.jpg",
+          "brightness": 0.65,
+          "loss": 30.7891788482666,
+          "foreground": 1.0
+        },
+        {
+          "step": 10,
+          "image": "astronaut.png",
+          "brightness": 1,
+          "loss": 5.3007941246032715,
+          "foreground": 7.0
+        },
+        {
+          "step": 11,
+          "image": "street-amsterdam.jpg",
+          "brightness": 1,
+          "loss": 9.652082443237305,
+          "foreground": 4.625
+        },
+        {
+          "step": 12,
+          "image": "street-telaviv.jpg",
+          "brightness": 1,
+          "loss": 6.8242716789245605,
+          "foreground": 1.0
+        },
+        {
+          "step": 13,
+          "image": "astronaut.png",
+          "brightness": 0.35,
+          "loss": 5.219807147979736,
+          "foreground": 7.0
+        },
+        {
+          "step": 14,
+          "image": "street-amsterdam.jpg",
+          "brightness": 0.35,
+          "loss": 9.026362419128418,
+          "foreground": 5.25
+        },
+        {
+          "step": 15,
+          "image": "street-telaviv.jpg",
+          "brightness": 0.35,
+          "loss": 2.5828678607940674,
+          "foreground": 1.0
+        },
+        {
+          "step": 16,
+          "image": "astronaut.png",
+          "brightness": 0.65,
+          "loss": 4.554895877838135,
+          "foreground": 7.0
+        },
+        {
+          "step": 17,
+          "image": "street-amsterdam.jpg",
+          "brightness": 0.65,
+          "loss": 9.571136474609375,
+          "foreground": 5.0
+        },
+        {
+          "step": 18,
+          "image": "street-telaviv.jpg",
+          "brightness": 0.65,
+          "loss": 1.4640562534332275,
+          "foreground": 1.0
+        },
+        {
+          "step": 19,
+          "image": "astronaut.png",
+          "brightness": 1,
+          "loss": 4.038140296936035,
+          "foreground": 8.0
+        },
+        {
+          "step": 20,
+          "image": "street-amsterdam.jpg",
+          "brightness": 1,
+          "loss": 10.060211181640625,
+          "foreground": 4.875
+        },
+        {
+          "step": 21,
+          "image": "street-telaviv.jpg",
+          "brightness": 1,
+          "loss": 0.7239654064178467,
+          "foreground": 1.0
+        },
+        {
+          "step": 22,
+          "image": "astronaut.png",
+          "brightness": 0.35,
+          "loss": 4.082716941833496,
+          "foreground": 8.0
+        },
+        {
+          "step": 23,
+          "image": "street-amsterdam.jpg",
+          "brightness": 0.35,
+          "loss": 8.463408470153809,
+          "foreground": 5.875
+        },
+        {
+          "step": 24,
+          "image": "street-telaviv.jpg",
+          "brightness": 0.35,
+          "loss": 0.37818145751953125,
+          "foreground": 1.0
+        },
+        {
+          "step": 25,
+          "image": "astronaut.png",
+          "brightness": 0.65,
+          "loss": 2.7676544189453125,
+          "foreground": 8.0
+        },
+        {
+          "step": 26,
+          "image": "street-amsterdam.jpg",
+          "brightness": 0.65,
+          "loss": 8.561266899108887,
+          "foreground": 5.375
+        },
+        {
+          "step": 27,
+          "image": "street-telaviv.jpg",
+          "brightness": 0.65,
+          "loss": 0.33600568771362305,
+          "foreground": 1.0
+        },
+        {
+          "step": 28,
+          "image": "astronaut.png",
+          "brightness": 1,
+          "loss": 2.3922481536865234,
+          "foreground": 8.0
+        },
+        {
+          "step": 29,
+          "image": "street-amsterdam.jpg",
+          "brightness": 1,
+          "loss": 8.926521301269531,
+          "foreground": 5.375
+        },
+        {
+          "step": 30,
+          "image": "street-telaviv.jpg",
+          "brightness": 1,
+          "loss": 0.17290210723876953,
+          "foreground": 1.0
+        },
+        {
+          "step": 31,
+          "image": "astronaut.png",
+          "brightness": 0.35,
+          "loss": 2.3606300354003906,
+          "foreground": 8.0
+        },
+        {
+          "step": 32,
+          "image": "street-amsterdam.jpg",
+          "brightness": 0.35,
+          "loss": 7.829002380371094,
+          "foreground": 5.75
+        },
+        {
+          "step": 33,
+          "image": "street-telaviv.jpg",
+          "brightness": 0.35,
+          "loss": 0.03291893005371094,
+          "foreground": 1.0
+        },
+        {
+          "step": 34,
+          "image": "astronaut.png",
+          "brightness": 0.65,
+          "loss": 1.4416896104812622,
+          "foreground": 9.0
+        },
+        {
+          "step": 35,
+          "image": "street-amsterdam.jpg",
+          "brightness": 0.65,
+          "loss": 8.007884979248047,
+          "foreground": 5.75
+        },
+        {
+          "step": 36,
+          "image": "street-telaviv.jpg",
+          "brightness": 0.65,
+          "loss": 0.02272796630859375,
+          "foreground": 1.0
+        },
+        {
+          "step": 37,
+          "image": "astronaut.png",
+          "brightness": 1,
+          "loss": 1.7364963293075562,
+          "foreground": 8.0
+        },
+        {
+          "step": 38,
+          "image": "street-amsterdam.jpg",
+          "brightness": 1,
+          "loss": 8.161717414855957,
+          "foreground": 5.375
+        },
+        {
+          "step": 39,
+          "image": "street-telaviv.jpg",
+          "brightness": 1,
+          "loss": 0.04889965057373047,
+          "foreground": 1.0
+        },
+        {
+          "step": 40,
+          "image": "astronaut.png",
+          "brightness": 0.35,
+          "loss": 1.8788691759109497,
+          "foreground": 9.0
+        },
+        {
+          "step": 41,
+          "image": "street-amsterdam.jpg",
+          "brightness": 0.35,
+          "loss": 6.376709938049316,
+          "foreground": 6.0
+        },
+        {
+          "step": 42,
+          "image": "street-telaviv.jpg",
+          "brightness": 0.35,
+          "loss": 0.02991771697998047,
+          "foreground": 1.0
+        },
+        {
+          "step": 43,
+          "image": "astronaut.png",
+          "brightness": 0.65,
+          "loss": 1.557990550994873,
+          "foreground": 9.0
+        },
+        {
+          "step": 44,
+          "image": "street-amsterdam.jpg",
+          "brightness": 0.65,
+          "loss": 6.444016456604004,
+          "foreground": 5.75
+        },
+        {
+          "step": 45,
+          "image": "street-telaviv.jpg",
+          "brightness": 0.65,
+          "loss": 0.051987648010253906,
+          "foreground": 1.0
+        },
+        {
+          "step": 46,
+          "image": "astronaut.png",
+          "brightness": 1,
+          "loss": 1.7817105054855347,
+          "foreground": 8.0
+        },
+        {
+          "step": 47,
+          "image": "street-amsterdam.jpg",
+          "brightness": 1,
+          "loss": 7.086660385131836,
+          "foreground": 5.125
+        },
+        {
+          "step": 48,
+          "image": "street-telaviv.jpg",
+          "brightness": 1,
+          "loss": 0.029695510864257812,
+          "foreground": 1.0
+        },
+        {
+          "step": 49,
+          "image": "astronaut.png",
+          "brightness": 0.35,
+          "loss": 1.3791972398757935,
+          "foreground": 9.0
+        },
+        {
+          "step": 50,
+          "image": "street-amsterdam.jpg",
+          "brightness": 0.35,
+          "loss": 5.866964340209961,
+          "foreground": 6.0
+        },
+        {
+          "step": 51,
+          "image": "street-telaviv.jpg",
+          "brightness": 0.35,
+          "loss": 0.011979103088378906,
+          "foreground": 1.0
+        },
+        {
+          "step": 52,
+          "image": "astronaut.png",
+          "brightness": 0.65,
+          "loss": 1.709667444229126,
+          "foreground": 8.0
+        },
+        {
+          "step": 53,
+          "image": "street-amsterdam.jpg",
+          "brightness": 0.65,
+          "loss": 5.83041524887085,
+          "foreground": 5.875
+        },
+        {
+          "step": 54,
+          "image": "street-telaviv.jpg",
+          "brightness": 0.65,
+          "loss": 0.020461559295654297,
+          "foreground": 1.0
+        },
+        {
+          "step": 55,
+          "image": "astronaut.png",
+          "brightness": 1,
+          "loss": 1.7194465398788452,
+          "foreground": 8.0
+        },
+        {
+          "step": 56,
+          "image": "street-amsterdam.jpg",
+          "brightness": 1,
+          "loss": 5.826169013977051,
+          "foreground": 5.5
+        },
+        {
+          "step": 57,
+          "image": "street-telaviv.jpg",
+          "brightness": 1,
+          "loss": 0.043491363525390625,
+          "foreground": 1.0
+        },
+        {
+          "step": 58,
+          "image": "astronaut.png",
+          "brightness": 0.35,
+          "loss": 1.598199486732483,
+          "foreground": 9.0
+        },
+        {
+          "step": 59,
+          "image": "street-amsterdam.jpg",
+          "brightness": 0.35,
+          "loss": 4.949085712432861,
+          "foreground": 6.125
+        },
+        {
+          "step": 60,
+          "image": "street-telaviv.jpg",
+          "brightness": 0.35,
+          "loss": 0.009182929992675781,
+          "foreground": 1.0
+        }
+      ],
+      "heldOutEvaluation": [
+        {
+          "brightness": 1,
+          "image": "street-barcelona-crop.jpg",
+          "sourceGroup": "street-barcelona.jpg",
+          "inputSha256": "a9e35fab3f30f07449d3bf57b13491c800664885bb825afbd18b8882bf3876d4",
+          "tp": 0,
+          "fp": 0,
+          "fn": 5,
+          "precision": 0,
+          "recall": 0.0,
+          "boxes": []
+        },
+        {
+          "brightness": 0.35,
+          "image": "street-barcelona-crop.jpg",
+          "sourceGroup": "street-barcelona.jpg",
+          "inputSha256": "a9e35fab3f30f07449d3bf57b13491c800664885bb825afbd18b8882bf3876d4",
+          "tp": 0,
+          "fp": 1,
+          "fn": 5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "boxes": [
+            [
+              -63.76800537109375,
+              367.47918701171875,
+              746.8575439453125,
+              252.57643127441406,
+              0.2882031202316284
+            ]
+          ]
+        },
+        {
+          "brightness": 1,
+          "image": "street-negative.jpg",
+          "sourceGroup": "street-negative.jpg",
+          "inputSha256": "85ffdf75b9424adb5a9cf38c4a98592bc33960eea16dcddc4408dfe097466a19",
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1,
+          "boxes": []
+        },
+        {
+          "brightness": 0.35,
+          "image": "street-negative.jpg",
+          "sourceGroup": "street-negative.jpg",
+          "inputSha256": "85ffdf75b9424adb5a9cf38c4a98592bc33960eea16dcddc4408dfe097466a19",
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1,
+          "boxes": []
+        }
+      ]
+    }
+  ]
+}

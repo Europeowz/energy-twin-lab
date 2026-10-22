@@ -1,0 +1,60 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>移动能源智造实验室：局域网使用说明</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f3f6f3;color:#173639;font:16px/1.85 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1100px;margin:36px auto;padding:40px 52px;background:#fff;border:1px solid #dae6df;border-radius:16px;min-width:0}h1{font-size:30px}h2{font-size:22px;padding-top:24px;border-top:1px solid #e2e9e3;color:#137c69}h1,h2,h3,h4,p,li,figcaption,a{overflow-wrap:anywhere}a{color:#087f6a}code{font-family:ui-monospace,Consolas,monospace;font-size:.9em;background:#edf4f0;padding:2px 5px;border-radius:4px}pre{background:#152e32;color:#f1f7f5;padding:20px;overflow:auto;max-width:100%;border-radius:8px}pre code{background:none;color:inherit;padding:0}.table{overflow:auto;max-width:100%}table{border-collapse:collapse;width:100%;font-size:14px}td,th{border:1px solid #dce7df;padding:10px 14px;vertical-align:top;text-align:left}th{background:#eaf4ee}nav{font-size:14px;color:#526e69}.badge{display:inline-block;background:#e8f4ed;padding:4px 12px;border-radius:20px}footer{margin-top:36px;color:#607670;font-size:13px}.manual-figure{margin:24px 0;max-width:100%;break-inside:avoid;page-break-inside:avoid}.manual-figure img{display:block;max-width:100%;width:auto;height:auto;margin:0 auto;border:1px solid #dce7df;border-radius:8px}.manual-figure figcaption{margin-top:8px;color:#526e69;font-size:13px;line-height:1.65;text-align:center;break-before:avoid;page-break-before:avoid}@media(max-width:700px){main{margin:0;padding:20px;border-radius:0}h1{font-size:25px}.manual-figure{margin:18px 0}}@page{size:A4;margin:14mm 12mm}@media print{body{background:#fff;font-size:11pt;line-height:1.65}main{margin:0;padding:0;border:0;max-width:none;border-radius:0}nav{display:none}h2,h3,h4{break-after:avoid}tr,pre{break-inside:avoid}pre{white-space:pre-wrap;overflow-wrap:anywhere}.manual-figure{break-inside:avoid;page-break-inside:avoid;margin:5mm 0}.manual-figure img{max-width:100%;max-height:225mm;object-fit:contain;break-after:avoid;page-break-after:avoid}.manual-figure figcaption{break-before:avoid;page-break-before:avoid;font-size:9pt}a{color:inherit}footer{display:none}}
+</style><main><nav><span class="badge">离线使用说明 · 1.2.0</span>　浏览器按 Ctrl+F 查找；按 Ctrl+P 打印或保存PDF。</nav><h1>移动能源智造实验室：局域网使用说明</h1><nav class="contents" aria-label="使用说明目录"><a style="display:inline-block;margin:4px 14px 4px 0" href="#section-1">一、先认清连接位置</a><a style="display:inline-block;margin:4px 14px 4px 0" href="#section-2">二、主机管理员先做这两步</a><a style="display:inline-block;margin:4px 14px 4px 0" href="#section-3">三、其他电脑安装公钥证书</a><a style="display:inline-block;margin:4px 14px 4px 0" href="#section-4">四、登录后按角色使用</a><a style="display:inline-block;margin:4px 14px 4px 0" href="#section-5">五、从原本机入口迁移已有工程</a><a style="display:inline-block;margin:4px 14px 4px 0" href="#section-6">六、打不开时按现象检查</a><a style="display:inline-block;margin:4px 14px 4px 0" href="#section-7">七、验收和保存</a></nav>
+<p>本次部署的主站地址是 <strong>`https://192.168.11.76:9443`</strong>。同一局域网的电脑可以通过浏览器访问主机，无需各自安装整套平台。主机须保持开机、网络地址稳定，并运行局域网服务。</p>
+<p>本说明区分“主机准备”和“其他电脑使用”。主机防火墙规则已核对生效，其他设备连通性仍待现场检查。</p>
+<h2 id="section-1">一、先认清连接位置</h2>
+<div class="table"><table>
+<tr><th>使用位置</th><th>地址或文件</th><th>用途</th></tr>
+<tr><td>机房电脑／同网客户端</td><td><code>https://192.168.11.76:9443</code></td><td>工作台、登录、班级、工程与在线助教</td></tr>
+<tr><td>独立代码运行器</td><td><code>https://192.168.11.76:9444</code></td><td>平台自动调用，一般不需要手动打开</td></tr>
+<tr><td>主机原本机入口</td><td><code>http://127.0.0.1:8765</code></td><td>保留原有本机使用方式；其他电脑的127.0.0.1不是本项目主机</td></tr>
+<tr><td>发给客户端的公钥证书</td><td><code>data/lan/EnergyTwin-LAN-CA.cer</code></td><td>安装后让浏览器信任本次部署的HTTPS证书</td></tr>
+</table></div>
+<figure class="manual-figure"><img src="manual-images/01-workspace.png" alt="工作台位置参考：左侧切换实验任务，中间查看模型，右侧修改参数；这是平台已有的实际界面截图，地址与账号以本次部署为准。" decoding="async"><figcaption>工作台位置参考：左侧切换实验任务，中间查看模型，右侧修改参数；这是平台已有的实际界面截图，地址与账号以本次部署为准。</figcaption></figure>
+<p>主站与运行器使用不同origin。运行器只提供白名单静态文件，没有登录或主站API；它不读取请求中的Cookie或Authorization。同IP不同端口不代表浏览器从不发送Cookie，隔离不能只靠端口。</p>
+<h2 id="section-2">二、主机管理员先做这两步</h2>
+<h3>1. 启动局域网服务</h3>
+<p>在主机的项目根目录打开 <strong>PowerShell 7</strong>，运行：</p>
+<pre><code>pwsh -NoProfile -File ./scripts/start-lan.ps1 -Address 192.168.11.76</code></pre>
+<p>局域网证书生成依赖PowerShell 7中的.NET能力，不能改用Windows PowerShell 5.1。主机应已完成本机启动准备，具有64位Python 3.12和项目的 <code>.runtime</code> 环境。普通单机启动仍使用“启动实验室.cmd”，不因局域网功能改为必须安装PowerShell 7。</p>
+<p>脚本绑定当前局域网IP，开启9443主站与9444运行器，并限制该IP所在子网。主站使用校园模式，在线助教需登录；会话Cookie启用Secure。本机原来的8765服务可继续保留。关闭局域网启动窗口或按Ctrl+C，会停止这组局域网服务，不等于删除工程。</p>
+<h3>2. 由Windows系统管理员放行两个端口</h3>
+<p>先右键项目根目录的“局域网防火墙设置.cmd”，选择“以管理员身份运行”。窗口会保留成功或错误结果，避免红字闪退。也可在主机上以<strong>系统管理员身份</strong>打开PowerShell，进入项目根目录后运行：</p>
+<pre><code>pwsh -NoProfile -File ./scripts/allow-lan-firewall.ps1 -Address 192.168.11.76</code></pre>
+<p>这与平台的 <code>lab_admin</code> 账号是两种权限。防火墙需要Windows系统管理员，网页登录管理员不能代替系统提权。脚本只放行当前IP的TCP 9443、9444，远程来源限定 <code>LocalSubnet</code>。</p>
+<p>2026-10-22由主机使用者以Windows管理员身份执行后显示SUCCESS；随后已实际读取系统规则确认：仅指定IP、TCP 9443/9444、LocalSubnet来源。此前批处理乱码已改为纯ASCII与Windows换行。外部客户端仍需安装证书并实际访问。</p>
+<h2 id="section-3">三、其他电脑安装公钥证书</h2>
+<ol><li>请主机管理员只提供 <strong>`EnergyTwin-LAN-CA.cer`</strong> 这一个公钥文件。不要复制整个 <code>data/lan</code> 目录，不要接收或转发服务器私钥。</li><li>在客户端Windows中双击该文件，打开证书窗口，点击“安装证书”。</li><li>选择“当前用户”，点击“下一步”。</li><li>选择“将所有的证书都放入下列存储”，点击“浏览”。</li><li>选择“受信任的根证书颁发机构”，确认后完成导入；核对证书来源确为本项目主机。</li><li>完全退出Chrome并重新打开，访问 <strong>`https://192.168.11.76:9443`</strong>。若浏览器仍提示证书错误，先核对访问IP、证书来源和信任位置，不通过“继续访问”忽略错误。</li></ol>
+<p>只需信任本次部署的CA公钥，无需安装Python、Node.js、ONNX或Pyodide。浏览器所需模型、课程与运行资源由主机提供。原站资料链接及在线助教仍需要主机或客户端能访问相应外部服务。</p>
+<h2 id="section-4">四、登录后按角色使用</h2>
+<div class="table"><table>
+<tr><th>角色</th><th>本次账号</th><th>主要操作</th></tr>
+<tr><td>管理员</td><td><code>lab_admin</code></td><td>管理本机构数据、保存助教模型设置</td></tr>
+<tr><td>教师</td><td><code>lab_teacher</code></td><td>建班、发布任务、查看本班提交、批阅反馈</td></tr>
+<tr><td>学生</td><td>自行注册的个人账号</td><td>加入班级、完成与保存个人工程、提交作业和提问</td></tr>
+</table></div>
+<p>管理员和教师的口令只保存在主机 <code>data/管理账号.txt</code>，不放入公开手册或运行包；由主机管理员分别交付本人所需口令，不把整份账号文件发给学生。</p>
+<figure class="manual-figure"><img src="manual-images/lan-teacher.png" alt="局域网HTTPS实际教师账号：Python和真实ONNX已运行，模型选项只读，仍可正常输入助教问题。" decoding="async"><figcaption>局域网HTTPS实际教师账号：Python和真实ONNX已运行，模型选项只读，仍可正常输入助教问题。</figcaption></figure>
+<p>教师在“教学管理”加载教师数据，建立班级并将班级码发给学生。学生登录、加入班级、从任务建立个人工程。浏览器中修改的内容先是草稿，点击“保存工程”后才进入服务端；完成后再提交作业。提交后保存的快照与后续草稿分开。</p>
+<p>打开助教后自动聚焦问题框，Enter发送、Shift+Enter换行；中文输入法选字不发送，等待回复时可以继续写下一条草稿。</p>
+<p>管理员打开“实验助教”，在“助教模型”选择模型并点击“保存模型”。教师和学生查看机构选择，不能修改。可选择Flash与Pro，刷新列表以服务端实际结果为准；切换只影响下一次请求，既有对话、工程内容、代码与作业进度保留。</p>
+<figure class="manual-figure"><img src="manual-images/lan-admin.png" alt="局域网HTTPS实际管理员账号：助教模型可选，设置作用于本机构；这里没有包含账号密码。" decoding="async"><figcaption>局域网HTTPS实际管理员账号：助教模型可选，设置作用于本机构；这里没有包含账号密码。</figcaption></figure>
+<h2 id="section-5">五、从原本机入口迁移已有工程</h2>
+<p>两个入口共用服务端SQLite数据库，但浏览器草稿按origin分别存储。因此从 <code>http://127.0.0.1:8765</code> 换成 <code>https://192.168.11.76:9443</code> 时，原本机草稿、未上传图片和自动操作备份不会自动出现在新地址。</p>
+<ol><li>在原本机入口登录自己的账号，将需要继续的工程“保存工程”到服务端；也可导出完整工程JSON留底。</li><li>在局域网入口登录同一账号，从工程列表打开已保存的工程；若用JSON迁移，在工程菜单选择“导入工程JSON”。</li><li>核对工程名、代码、参数和运行ID，再继续实验。原始导入图片需重新选择，不能用截图或CSV代替完整工程。</li></ol>
+<p>不要为了迁移草稿复制正在运行的数据库文件。备份和恢复仍使用<a href="manual.html">使用说明</a>第9节的SQLite备份命令。</p>
+<h2 id="section-6">六、打不开时按现象检查</h2>
+<div class="table"><table>
+<tr><th>现象</th><th>检查顺序</th></tr>
+<tr><td>超时或无法连接</td><td>主机是否开机、局域网服务是否运行；是否使用当前IP；双方是否在同一子网；主机防火墙是否实际允许9443、9444</td></tr>
+<tr><td>证书不受信任／地址不匹配</td><td>是否使用HTTPS与正确IP；是否安装本次CA公钥到当前用户的受信任根证书；是否完全退出并重启Chrome</td></tr>
+<tr><td>页面能开、代码运行器失败</td><td>9444是否放行；是否仍有证书问题；查看平台运行器错误，不用伪造结果继续</td></tr>
+<tr><td>助教要求登录</td><td>局域网是校园模式，先登录自己的账号，再重新发送原问题</td></tr>
+<tr><td>助教连接失败</td><td>查看本条回答的原因，核对主机联网、服务端密钥与实际模型服务；规则回退不等于在线模型回答</td></tr>
+<tr><td>主机换网后原地址失效</td><td>在主机确认新IP，用新地址重启局域网脚本，重新核对防火墙并分发新的CA公钥，客户端更新访问地址</td></tr>
+<tr><td>局域网入口没有原草稿</td><td>回原入口保存服务端工程，或导出完整JSON后在新入口导入；先保留原数据，不清理浏览器</td></tr>
+</table></div>
+<h2 id="section-7">七、验收和保存</h2>
+<p>当前已通过主机使用局域网IP的HTTPS自访验证：真实管理员/教师登录、Secure会话、独立HTTPS运行器执行Python、真实ONNX、角色模型设置权限及私有文件路径不可访问。证据见 <code>evidence-lan/lan-host-qa.json</code>；浏览器未忽略证书错误。当前文件说明的是已配置的局域网方案与操作方法。真实其他设备连接，以及目标机房并发与性能仍需现场核验，不能用主机自访替代。请在一台同子网电脑上完成证书安装、登录、打开工程、实际运行Python并向助教提问，保存当时结果再确认交付。</p>
+<p>主机的服务器私钥、DeepSeek密钥、数据库、备份和账号口令文件不得作为静态文件或共享目录发布。客户端只取得CA公钥及各自账号。正式学校域名、独立主机名与反向代理的部署配置见[校园部署](校园部署.md)。</p><footer>以本运行包的最终验收报告与实际运行证据为准。说明页无外部字体、脚本或网络依赖。</footer></main></html>

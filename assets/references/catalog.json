@@ -1,0 +1,367 @@
+{
+  "format": "engineering-reference-catalog/2",
+  "policy": "original-pdf-else-original-html",
+  "checkedAt": "2026-10-22",
+  "documents": [
+    {
+      "id": "S01",
+      "format": "html",
+      "url": "https://hudong.moe.gov.cn/srcsite/A08/s7945/s7946/201806/t20180607_338713.html",
+      "access": "online",
+      "label": "官网HTML",
+      "note": "直接打开对应官网HTML页面，保留官网原始内容与版式。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S02",
+      "format": "html",
+      "url": "http://www.moe.gov.cn/srcsite/A16/s3342/202604/t20260410_1433240.html",
+      "access": "online",
+      "label": "官网HTML",
+      "note": "直接打开对应官网HTML页面，保留官网原始内容与版式。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S03",
+      "format": "html",
+      "url": "https://hudong.moe.gov.cn/s78/A08/tongzhi/201812/t20181205_362501.html",
+      "access": "online",
+      "label": "官网HTML",
+      "note": "直接打开对应官网HTML页面，保留官网原始内容与版式。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S04",
+      "format": "pdf",
+      "url": "https://amr.hainan.gov.cn/zw/tztg/202604/P020260410547104380682.pdf",
+      "access": "online",
+      "label": "PDF原文件",
+      "note": "直接打开发布方提供的原始PDF文件。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S05",
+      "format": "html",
+      "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=AEF144D5381E9FDBD265AFA5A87595A3",
+      "access": "online",
+      "label": "官网HTML",
+      "note": "官网标准信息及预览入口；全文是否公开、是否需要验证，以官网提供内容为准。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S06",
+      "format": "html",
+      "url": "https://openstd.samr.gov.cn/bzgk/std/nd?no=2801",
+      "access": "online",
+      "label": "官网HTML",
+      "note": "官方修改单公开通知HTML；通知与修改单正文分别核对。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S07",
+      "format": "html",
+      "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=D2E6CB179060D6BF01FA6F1FBCB60D88",
+      "access": "online",
+      "label": "官网HTML",
+      "note": "官网标准信息及预览入口；全文是否公开、是否需要验证，以官网提供内容为准。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S08",
+      "format": "html",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=053404E3EE9C8F91E06397BE0A0A9209",
+      "access": "online",
+      "label": "官网HTML",
+      "note": "官网标准信息及预览入口；全文是否公开、是否需要验证，以官网提供内容为准。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S09",
+      "format": "html",
+      "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=10492C41A2017383A7C3BFD41C1CB19A",
+      "access": "online",
+      "label": "官网HTML",
+      "note": "官网标准信息及预览入口；全文是否公开、是否需要验证，以官网提供内容为准。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S10",
+      "format": "pdf",
+      "url": "https://amr.hainan.gov.cn/zw/tztg/202604/P020260410547104316711.pdf",
+      "access": "online",
+      "label": "PDF原文件",
+      "note": "直接打开发布方提供的原始PDF文件。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S11",
+      "format": "pdf",
+      "url": "https://amr.hainan.gov.cn/zw/tztg/202604/P020260410547104197199.pdf",
+      "access": "online",
+      "label": "PDF原文件",
+      "note": "直接打开发布方提供的原始PDF文件。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S12",
+      "format": "html",
+      "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=3AB693FAFF5D9716DF61C61D6FD2187A",
+      "access": "online",
+      "label": "官网HTML",
+      "note": "官网标准信息及预览入口；全文是否公开、是否需要验证，以官网提供内容为准。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S13",
+      "format": "html",
+      "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=8E520B1991C62DEBC55B46DE49C6F4F5",
+      "access": "online",
+      "label": "官网HTML",
+      "note": "官网标准信息及预览入口；全文是否公开、是否需要验证，以官网提供内容为准。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S14",
+      "format": "html",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=FC816D04FECA62EBE05397BE0A0AD5FA",
+      "access": "online",
+      "label": "官网HTML",
+      "note": "官网标准信息及预览入口；全文是否公开、是否需要验证，以官网提供内容为准。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S15",
+      "format": "html",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=enGWl3z85vU%3D&mode=p",
+      "access": "online",
+      "label": "官网HTML",
+      "note": "官网标准信息及预览入口；全文是否公开、是否需要验证，以官网提供内容为准。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S16",
+      "format": "html",
+      "url": "https://www.cnca.gov.cn/zwxx/gg/zjgg/art/2024/art_db871e346c7f40f09a405fa8a2bd451c.html",
+      "access": "online",
+      "label": "官网HTML",
+      "note": "直接打开对应官网HTML页面，保留官网原始内容与版式。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S17",
+      "format": "html",
+      "url": "https://evar.co.kr/en/products/parky",
+      "access": "online",
+      "label": "官网HTML",
+      "note": "直接打开对应官网HTML页面，保留官网原始内容与版式。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S18",
+      "format": "pdf",
+      "url": "https://evar.co.kr/pdfs/product-brochure/EVAR_MooeV_Brochure.pdf",
+      "access": "online",
+      "label": "PDF原文件",
+      "note": "直接打开发布方提供的原始PDF文件。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S19",
+      "format": "pdf",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ams/NIST.AMS.400-2.pdf",
+      "access": "online",
+      "label": "PDF原文件",
+      "note": "直接打开发布方提供的原始PDF文件。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S20",
+      "format": "html",
+      "url": "https://ww2.mathworks.cn/help/robotics/ug/mobile-robot-kinematics-equations.html",
+      "access": "online",
+      "label": "官网HTML",
+      "note": "直接打开对应官网HTML页面，保留官网原始内容与版式。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S21",
+      "format": "html",
+      "url": "https://onnxruntime.ai/docs/tutorials/web/build-web-app.html",
+      "access": "online",
+      "label": "官网HTML",
+      "note": "直接打开对应官网HTML页面，保留官网原始内容与版式。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S22",
+      "format": "html",
+      "url": "https://pyodide.org/en/0.27.7/usage/webworker.html",
+      "access": "online",
+      "label": "官网HTML",
+      "note": "直接打开对应官网HTML页面，保留官网原始内容与版式。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S23",
+      "format": "html",
+      "url": "https://github.com/Megvii-BaseDetection/YOLOX/blob/6ddff4824372906469a7fae2dc3206c7aa4bbaee/demo/ONNXRuntime/README.md",
+      "access": "online",
+      "label": "官网HTML",
+      "note": "直接打开对应官网HTML页面，保留官网原始内容与版式。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S24",
+      "format": "pdf",
+      "url": "https://arxiv.org/pdf/2107.08430",
+      "access": "online",
+      "label": "PDF原文件",
+      "note": "直接打开发布方提供的原始PDF文件。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S25",
+      "format": "html",
+      "url": "https://github.com/Megvii-BaseDetection/YOLOX/blob/6ddff4824372906469a7fae2dc3206c7aa4bbaee/LICENSE",
+      "access": "online",
+      "label": "官网HTML",
+      "note": "直接打开对应官网HTML页面，保留官网原始内容与版式。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S26",
+      "format": "html",
+      "url": "https://github.com/cocodataset/cocodataset.github.io/blob/master/dataset/termsofuse.htm",
+      "access": "online",
+      "label": "官网HTML",
+      "note": "直接打开对应官网HTML页面，保留官网原始内容与版式。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S27",
+      "format": "pdf",
+      "url": "https://www.gatsby.ucl.ac.uk/~dayan/papers/cjch.pdf",
+      "access": "online",
+      "label": "PDF原文件",
+      "note": "直接打开发布方提供的原始PDF文件。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S28",
+      "format": "html",
+      "url": "https://gymnasium.farama.org/environments/toy_text/frozen_lake/",
+      "access": "online",
+      "label": "官网HTML",
+      "note": "直接打开对应官网HTML页面，保留官网原始内容与版式。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S29",
+      "format": "html",
+      "url": "https://stable-baselines3.readthedocs.io/en/v2.7.0/guide/rl_tips.html",
+      "access": "online",
+      "label": "官网HTML",
+      "note": "直接打开对应官网HTML页面，保留官网原始内容与版式。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S30",
+      "format": "html",
+      "url": "https://threejs.org/manual/pages/creating-a-scene.html",
+      "access": "online",
+      "label": "官网HTML",
+      "note": "直接打开对应官网HTML页面，保留官网原始内容与版式。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S31",
+      "format": "html",
+      "url": "https://rapier.rs/docs/user_guides/javascript/colliders/",
+      "access": "online",
+      "label": "官网HTML",
+      "note": "直接打开对应官网HTML页面，保留官网原始内容与版式。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S32",
+      "format": "html",
+      "url": "https://react.dev/learn/state-a-components-memory",
+      "access": "online",
+      "label": "官网HTML",
+      "note": "直接打开对应官网HTML页面，保留官网原始内容与版式。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S33",
+      "format": "html",
+      "url": "https://vite.dev/guide/static-deploy.html",
+      "access": "online",
+      "label": "官网HTML",
+      "note": "直接打开对应官网HTML页面，保留官网原始内容与版式。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S34",
+      "format": "html",
+      "url": "https://fastapi.tiangolo.com/tutorial/security/first-steps/",
+      "access": "online",
+      "label": "官网HTML",
+      "note": "直接打开对应官网HTML页面，保留官网原始内容与版式。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S35",
+      "format": "html",
+      "url": "https://www.sqlite.org/backup.html",
+      "access": "online",
+      "label": "官网HTML",
+      "note": "直接打开对应官网HTML页面，保留官网原始内容与版式。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S36",
+      "format": "html",
+      "url": "https://api-docs.deepseek.com/zh-cn/api/create-chat-completion/",
+      "access": "online",
+      "label": "官网HTML",
+      "note": "直接打开对应官网HTML页面，保留官网原始内容与版式。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S37",
+      "format": "html",
+      "url": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-sandbox",
+      "access": "online",
+      "label": "官网HTML",
+      "note": "直接打开对应官网HTML页面，保留官网原始内容与版式。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S38",
+      "format": "html",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Content-Security-Policy",
+      "access": "online",
+      "label": "官网HTML",
+      "note": "直接打开对应官网HTML页面，保留官网原始内容与版式。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S39",
+      "format": "html",
+      "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/",
+      "access": "online",
+      "label": "官网HTML",
+      "note": "直接打开对应官网HTML页面，保留官网原始内容与版式。",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "S40",
+      "format": "html",
+      "url": "https://playwright.dev/docs/test-assertions",
+      "access": "online",
+      "label": "官网HTML",
+      "note": "直接打开对应官网HTML页面，保留官网原始内容与版式。",
+      "checkedAt": "2026-10-22"
+    }
+  ]
+}

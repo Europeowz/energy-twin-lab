@@ -1,0 +1,35 @@
+{
+  "format": "original-procedural-assets/1",
+  "updatedAt": "2026-10-20",
+  "items": [
+    {
+      "id": "robot",
+      "name": "园区差速移动充电机器人",
+      "source": "Original parameterized teaching geometry",
+      "externalCad": false
+    },
+    {
+      "id": "road",
+      "name": "单轨转向储充车教学抽象",
+      "source": "Original parameterized teaching geometry",
+      "externalCad": false
+    },
+    {
+      "id": "factory",
+      "name": "工位与场地",
+      "source": "Original boxes, cylinders, ground grid and materials",
+      "externalCad": false
+    }
+  ],
+  "licenseStatement": "本项目原创参数化几何；未复制企业CAD、照片、第三方贴图或成套车辆模型。不推定企业授权或产品背书。Three.js/Rapier软件许可另列。",
+  "sourceFiles": [
+    {
+      "path": "frontend/src/Scene.tsx",
+      "sha256": "f15b94f1d68bf66c1b1f51ff06551c3d21b8ef61b919883b2184bda7a7e1ee94"
+    },
+    {
+      "path": "frontend/src/core.ts",
+      "sha256": "5201f6892cad49c158a20cb1ef34e68f4fd28001f92af20d9f30992e9351bc0e"
+    }
+  ]
+}

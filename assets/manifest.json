@@ -1,0 +1,298 @@
+{
+  "version": "1.2",
+  "assets": [
+    {
+      "path": "datasets/astronaut.png",
+      "source": "https://raw.githubusercontent.com/scikit-image/scikit-image/v0.24.0/skimage/data/astronaut.png",
+      "license": "NASA public-domain photograph of Eileen Collins, documented by scikit-image data.astronaut; no endorsement implied",
+      "sha256": "74d3ec6cca600b36965c09e909769cea633b52668a183f36ad32f45187784441",
+      "bytes": 443039
+    },
+    {
+      "path": "datasets/far.png",
+      "sha256": "4faf06a83d770b5f11865826d1749171e03b0731590f6cfdaf5c0b1afcb92f55",
+      "bytes": 52772
+    },
+    {
+      "path": "datasets/low-light.png",
+      "sha256": "578931f3c765e8c9a41f4eb11ba305ae303c9210394b27018236c70570c9d8cb",
+      "bytes": 312157
+    },
+    {
+      "path": "datasets/manifest.json",
+      "bytes": 10512,
+      "sha256": "4947eb1e8b5802edafe215b23c60c47b4631744b280e176ba19091c263fdf42d"
+    },
+    {
+      "path": "datasets/negative.png",
+      "sha256": "999032449457ab0781a2ddeab5cb0014b0c8128be32c312e8f8bff1177ce8c52",
+      "bytes": 2260
+    },
+    {
+      "path": "datasets/occluded.png",
+      "sha256": "12cf9e558db1a38ff001f1599862de737bbbea6e8936f3553b122d50c9ef9b21",
+      "bytes": 331578
+    },
+    {
+      "path": "datasets/street-amsterdam.jpg",
+      "bytes": 235173,
+      "sha256": "fbcaebce4582ae97e21630c546096df2613147c91f0d8d085a503d9322aac7bd"
+    },
+    {
+      "path": "datasets/street-annotations.json",
+      "bytes": 857,
+      "sha256": "e157d38e68a26ef19bd82bba8daa632f19ddbbcd9622e4d7b09c7c7605aabb7d"
+    },
+    {
+      "path": "datasets/street-barcelona-crop.jpg",
+      "bytes": 50665,
+      "sha256": "a9e35fab3f30f07449d3bf57b13491c800664885bb825afbd18b8882bf3876d4"
+    },
+    {
+      "path": "datasets/street-barcelona.jpg",
+      "bytes": 176801,
+      "sha256": "52a4aa7aef4e1f32d340dcc1fb0051df81e4e151864d5eaa08ee99280d6b6926"
+    },
+    {
+      "path": "datasets/street-negative.jpg",
+      "bytes": 208644,
+      "sha256": "85ffdf75b9424adb5a9cf38c4a98592bc33960eea16dcddc4408dfe097466a19"
+    },
+    {
+      "path": "datasets/street-telaviv.jpg",
+      "bytes": 304310,
+      "sha256": "b0464b03bf00156cb2c10eb13e77b90910fe1022c07ba69685d0c61e872eca90"
+    },
+    {
+      "path": "licenses/CPython-PSF.txt",
+      "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf",
+      "bytes": 13936
+    },
+    {
+      "path": "licenses/Pyodide-MPL-2.0.txt",
+      "sha256": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5",
+      "bytes": 16725
+    },
+    {
+      "path": "licenses/quickjs-emscripten-LICENSE",
+      "sha256": "3c6040aa318612a234cc951609b640c0c63d85ae5a98a9330d3116f1553a79db",
+      "bytes": 1102
+    },
+    {
+      "path": "licenses/react-LICENSE",
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93",
+      "bytes": 1088
+    },
+    {
+      "path": "licenses/street-data-sources.json",
+      "bytes": 5026,
+      "sha256": "e5618545c03e5f13dc03edc6ab58e5317a183449d33eb4e4fa9b4eba9684a46e"
+    },
+    {
+      "path": "licenses/three-LICENSE",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "bytes": 1081
+    },
+    {
+      "path": "licenses/YOLOX-Apache-2.0.txt",
+      "source": "https://raw.githubusercontent.com/Megvii-BaseDetection/YOLOX/main/LICENSE",
+      "license": "Apache-2.0",
+      "sha256": "0ec3668d3274bcf29e8a29e9576d5a2cd96fc78d3c5bec4387355a796e5d9088",
+      "bytes": 11371
+    },
+    {
+      "path": "model-provenance.json",
+      "bytes": 1099,
+      "sha256": "aecfd7db249b5776cb0124777c536173f03c1223eec60fa84d561956268cb7b0"
+    },
+    {
+      "path": "models/training-summary.json",
+      "bytes": 30405,
+      "sha256": "d9cb01b15c455fd3954a2f8eb0089630d35a06474daa0136a868d945f580ea2f"
+    },
+    {
+      "path": "models/yolox_coverage_teaching.onnx",
+      "bytes": 3713972,
+      "sha256": "26516f27c78af598805ee14732e80c521103a10153c1f17dc5fda7585836b55a"
+    },
+    {
+      "path": "models/yolox_day_teaching.onnx",
+      "bytes": 3713972,
+      "sha256": "64e0f02bfcbc6dcfec7a75ac4648c5da89ff00d7152bce036161fdce63a75338"
+    },
+    {
+      "path": "models/yolox_nano.onnx",
+      "source": "https://github.com/Megvii-BaseDetection/YOLOX/releases/download/0.1.1rc0/yolox_nano.onnx",
+      "license": "YOLOX official repository release; Apache-2.0 project distribution; upstream LICENSE retained, no separate weight exception stated in release README",
+      "sha256": "c789161ed43c8269fcd4e67c67eeeb4e80c622da2eb296a20bc6007bd18a0b7d",
+      "bytes": 3659407
+    },
+    {
+      "path": "references/catalog.json",
+      "sha256": "82c65e0fc5f45151ffb6c7d99487b04a893726e3eba110700438bbcc639fa397",
+      "bytes": 13350,
+      "source": "See references/catalog.json and references/reader-manifest.json",
+      "license": "Per-source rights and original notices in references/readers/*-license.txt; public online URLs are not mirrored"
+    },
+    {
+      "path": "vendor/ort/ort-wasm-simd-threaded.asyncify.mjs",
+      "sha256": "3d1c85995364bb643302fc6fd877a0c3ba5ae72401815e0f24828a53d9191e28",
+      "bytes": 53057
+    },
+    {
+      "path": "vendor/ort/ort-wasm-simd-threaded.asyncify.wasm",
+      "sha256": "39f9f0894d478800487ed9f7dbe92618498db320cf55c8e3d89adff8dce658da",
+      "bytes": 26781914
+    },
+    {
+      "path": "vendor/ort/ort-wasm-simd-threaded.jsep.mjs",
+      "sha256": "709853412fd1ffc34247af1e73569227b5b79629c5ca3f59cc39cf7e500e4947",
+      "bytes": 46851
+    },
+    {
+      "path": "vendor/ort/ort-wasm-simd-threaded.jsep.wasm",
+      "sha256": "3ad23231b5bd6d9dda55a7f84606315e0bf35b6750c28ee993c987c54cacab0f",
+      "bytes": 28312028
+    },
+    {
+      "path": "vendor/ort/ort-wasm-simd-threaded.jspi.mjs",
+      "sha256": "270e2c6da9f297239d301d329782b6446641cb1e16a77967690adcfca35f3268",
+      "bytes": 50918
+    },
+    {
+      "path": "vendor/ort/ort-wasm-simd-threaded.jspi.wasm",
+      "sha256": "a54c76f86b0f0d9572380cf1c6292a7b3903716ffcbcd6b0e5c7050bf430eb93",
+      "bytes": 16758545
+    },
+    {
+      "path": "vendor/ort/ort-wasm-simd-threaded.mjs",
+      "sha256": "e13f7f94fc51b4ca72b12faeb1ee95f4ace6dfbc8939bc718aabdc0a27c4299b",
+      "bytes": 24381
+    },
+    {
+      "path": "vendor/ort/ort-wasm-simd-threaded.wasm",
+      "sha256": "3398c10d07d229bd91b364548e130e0e51a8e5704b88c7c083ebbeb78842dee2",
+      "bytes": 14239897
+    },
+    {
+      "path": "vendor/ort/ort.all.bundle.min.mjs",
+      "sha256": "781899d39e1162c435e14c9dec228f7aff0514765f161ea4d29a4afde38a7d15",
+      "bytes": 865342
+    },
+    {
+      "path": "vendor/ort/ort.all.min.mjs",
+      "sha256": "2e4a0eae53c3f246e26423aaca493d3bfc22ce524894f27519a9ec4a14e6397a",
+      "bytes": 819537
+    },
+    {
+      "path": "vendor/ort/ort.all.mjs",
+      "sha256": "cafbd41605f141c410ae59c0106de371ec78f1ab34309d031044b87655431704",
+      "bytes": 5930509
+    },
+    {
+      "path": "vendor/ort/ort.bundle.min.mjs",
+      "sha256": "d5fd02577ab51ec31243809e146c81600cd614786a7f9bf848ea8efbfc07af1c",
+      "bytes": 413523
+    },
+    {
+      "path": "vendor/ort/ort.jspi.bundle.min.mjs",
+      "sha256": "07ec090355e11b342c95436db54da2d0c2bd5b1d319745bfd3337e6bdcf170ac",
+      "bytes": 115872
+    },
+    {
+      "path": "vendor/ort/ort.jspi.min.mjs",
+      "sha256": "bc57179d923fda2d88d4a395359c8df44399dde087bf9ff44fc0e40ab398e4d9",
+      "bytes": 66511
+    },
+    {
+      "path": "vendor/ort/ort.jspi.mjs",
+      "sha256": "ab6b93021cec32d4542708f2c2aaa1a0e44f521f5fb930d2ad6e76804ff77abc",
+      "bytes": 677208
+    },
+    {
+      "path": "vendor/ort/ort.min.mjs",
+      "sha256": "0ca19c223d563f244908feb26712f40333980b07576328c8b4a04d132bbf34ad",
+      "bytes": 367950
+    },
+    {
+      "path": "vendor/ort/ort.mjs",
+      "sha256": "d8f4275e3f68a45c78e553730fd0ac2ad9698a33b56d6a6006ba43a126efddc6",
+      "bytes": 2640738
+    },
+    {
+      "path": "vendor/ort/ort.node.min.mjs",
+      "sha256": "f41b1e1ccf89e7b630c2a822192d6cf48d642b1abe3c321f1ad6b4130a78327e",
+      "bytes": 27061
+    },
+    {
+      "path": "vendor/ort/ort.wasm.bundle.min.mjs",
+      "sha256": "11e64bd8ffe11bd1a2a2f0d6275fdfbbba7262f0b76b99b53d228a8a22ef3d90",
+      "bytes": 73054
+    },
+    {
+      "path": "vendor/ort/ort.wasm.min.mjs",
+      "sha256": "219e6a1fc8a9938268d18efca3c91d310bd2f4a59bbd13744df5b2b7fc6cee3b",
+      "bytes": 50126
+    },
+    {
+      "path": "vendor/ort/ort.wasm.mjs",
+      "sha256": "8adfc6401b41042153e1d657cec4042682f28b99939bfa5af3d143e3812e952d",
+      "bytes": 578263
+    },
+    {
+      "path": "vendor/ort/ort.webgl.min.mjs",
+      "sha256": "bf9d3bf9589b7caecd4f3ed3fccd7cdb15210c908e8f51f62fba9fdf0a532af9",
+      "bytes": 472167
+    },
+    {
+      "path": "vendor/ort/ort.webgl.mjs",
+      "sha256": "49b3948f411666cd830475e6a19a5cfe7a1d42eb61d0cd880bb7a25dc187c236",
+      "bytes": 3534901
+    },
+    {
+      "path": "vendor/ort/ort.webgpu.bundle.min.mjs",
+      "sha256": "0730816731ce2cdfb06f273da065d4a1c7091eb9d1756a83b2916c8a89d015e2",
+      "bytes": 117732
+    },
+    {
+      "path": "vendor/ort/ort.webgpu.min.mjs",
+      "sha256": "3dffff71811bc13a3a3d9591c57ca5ee5735b8f5f3eaf789510b02bb040ae3a0",
+      "bytes": 66349
+    },
+    {
+      "path": "vendor/ort/ort.webgpu.mjs",
+      "sha256": "58a78401a755b8e44e1e340e0f4e7335165b2e7544438566fa688d0c4cf71a4e",
+      "bytes": 677191
+    },
+    {
+      "path": "vendor/pyodide/pyodide-lock.json",
+      "sha256": "9c45b916001a750f4102fc287494f3eab215909c7535c626a20db80fd6333e2c",
+      "bytes": 112205
+    },
+    {
+      "path": "vendor/pyodide/pyodide.asm.js",
+      "sha256": "6b4c90de5b7172873f04f21884d0e9d2274e305fe32116558fe3e4fbe3618d51",
+      "bytes": 1255688
+    },
+    {
+      "path": "vendor/pyodide/pyodide.asm.wasm",
+      "sha256": "a50dd1843f805a0b7c45b61037ee0d7b26dfe85efe0e18ef95a34ad24e401f5f",
+      "bytes": 10105545
+    },
+    {
+      "path": "vendor/pyodide/pyodide.js",
+      "sha256": "b4cb23a53aba19c221659b9fb40a2f18281d685691dc06647fb0afd0681baf98",
+      "bytes": 14913
+    },
+    {
+      "path": "vendor/pyodide/pyodide.mjs",
+      "sha256": "04c052c815abb0bf2981fa38c2dfa58e3120ee5288c956df2b2a15e301782c5f",
+      "bytes": 13931
+    },
+    {
+      "path": "vendor/pyodide/python_stdlib.zip",
+      "sha256": "16611534726e5d8ac2bd8f926410b2dcb8d6f49aa24913463533b457a2115c16",
+      "bytes": 2360737
+    }
+  ]
+}

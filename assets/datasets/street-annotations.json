@@ -1,0 +1,10 @@
+{
+  "format": "street-manual-annotations/1",
+  "method": "Codex visual annotation of visible person extents on resized images. Functional teaching labels; not independently double-annotated or a road benchmark. Evaluation only class 0 (person). Cars and other categories are outside this task.",
+  "items": [
+    {"id":"street-amsterdam.jpg","split":"train","boxes":[[92,294,278,428],[405,294,168,377],[585,272,164,432],[650,210,129,350],[795,267,86,205],[858,271,83,204],[904,274,42,172],[845,252,39,64]]},
+    {"id":"street-telaviv.jpg","split":"train","boxes":[]},
+    {"id":"street-negative.jpg","split":"test","boxes":[]},
+    {"id":"street-barcelona-crop.jpg","sourceId":"street-barcelona.jpg","crop":[480,270,635,365],"resize":[620,380],"split":"test","boxes":[[54,111,62,92],[316,106,55,101],[399,165,61,98],[452,174,47,100],[516,190,43,91]]}
+  ]
+}
