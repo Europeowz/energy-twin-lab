@@ -1,0 +1,19 @@
+import{p as q}from"./main-DnxDRZ4F.js";import"./modulepreload-polyfill-B5Qt9EMX.js";const P={javascript:["assets/static-runtime/quickjs.wasm"],python:["assets/vendor/pyodide/pyodide.asm.js","assets/vendor/pyodide/pyodide.asm.wasm","assets/vendor/pyodide/python_stdlib.zip","assets/vendor/pyodide/pyodide-lock.json"]};async function U(c,j,l=15e3,i){if(!window.isSecureContext)throw Error("代码运行需要HTTPS或localhost安全上下文");if(i?.aborted)throw Error("已取消代码仿真，隔离环境已释放");const a=crypto.randomUUID(),T=location.origin,o=document.createElement("iframe");o.hidden=!0,o.sandbox.add("allow-scripts"),o.setAttribute("aria-label","学生代码隔离运行器"),o.srcdoc=`<!doctype html><html><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'nonce-${a}' blob: 'unsafe-eval' 'wasm-unsafe-eval'; worker-src blob:; connect-src 'none'; img-src 'none'; style-src 'none'; base-uri 'none'; form-action 'none'"></head><body><script nonce="${a}">
+  (()=>{const id=${JSON.stringify(a)},host=${JSON.stringify(T)};let worker,url;
+  const send=data=>parent.postMessage({id,...data},host);
+  const close=()=>{if(worker)worker.terminate();if(url)URL.revokeObjectURL(url);worker=null;url=null;};
+  addEventListener('pagehide',close);
+  addEventListener('message',event=>{if(event.source!==parent||event.origin!==host||event.data?.id!==id)return;
+    const data=event.data;
+    if(data.op==='dispose'){close();return;}
+    if(data.op==='bootstrap'){
+      if(worker||typeof data.source!=='string')return;
+      url=URL.createObjectURL(new Blob([data.source],{type:'text/javascript'}));
+      worker=new Worker(url);
+      worker.onmessage=message=>send(message.data);
+      worker.onerror=error=>{send({requestId:data.requestId,error:error.message||'隔离运行时加载失败'});close();};
+      send({bootstrapped:true});return;
+    }
+    if(worker)worker.postMessage(data);
+  });send({ready:true});})();
+  <\/script></body></html>`;let d=!1,R=0,s;const u=new AbortController;let p=()=>{},m=()=>{},w=()=>{},f=()=>{};const y=new Promise((e,r)=>{p=e,m=r}),b=new Promise((e,r)=>{w=e,f=r});y.catch(()=>{}),b.catch(()=>{});const n=(e="隔离会话已结束")=>{d||(d=!0,clearTimeout(E),u.abort(),o.contentWindow?.postMessage({id:a,op:"dispose"},"*"),o.remove(),window.removeEventListener("message",v),i?.removeEventListener("abort",h),s&&(clearTimeout(s.timer),s.reject(Error(e)),s=void 0),m(Error(e)),f(Error(e)))},h=()=>n("已取消代码仿真，隔离环境已释放"),v=e=>{if(e.source!==o.contentWindow||e.origin!=="null"||e.data?.id!==a)return;if(e.data.ready){p();return}if(e.data.bootstrapped){w();return}if(!s||s.id!==e.data.requestId)return;const r=s;s=void 0,clearTimeout(r.timer),e.data.error?(r.reject(Error(e.data.error)),n()):r.resolve(e.data.result)},g=e=>new Promise((r,t)=>{if(d||i?.aborted){t(Error("代码会话已取消或结束"));return}if(s){t(Error("隔离策略必须顺序执行"));return}const L=++R;s={id:L,resolve:r,reject:t,timer:setTimeout(()=>n("代码运行超时，已终止并释放隔离环境。请检查循环或减少训练回合。"),l)},o.contentWindow.postMessage({id:a,requestId:L,...e},"*")}),E=setTimeout(()=>n("隔离运行器加载超时"),l);window.addEventListener("message",v),i?.addEventListener("abort",h,{once:!0}),document.body.appendChild(o);const k=async e=>{const r=new URL(q("/"+e),location.href);if(r.origin!==location.origin)throw Error("运行时资源必须来自本站固定目录");const t=await fetch(r,{credentials:"omit",signal:u.signal});if(!t.ok)throw Error("静态运行时资源缺失，请检查发布包");return t.arrayBuffer()};try{const[e,r]=await Promise.all([k("assets/static-runtime/student-runtime.js").then(t=>new TextDecoder().decode(t)),Promise.all(P[c].map(async t=>({name:t.split("/").at(-1),bytes:await k(t)})))]);if(await y,d)throw Error("隔离会话已结束");o.contentWindow.postMessage({id:a,op:"bootstrap",source:e},"*"),await b,await g({op:"init",language:c,code:j,resources:r}),clearTimeout(E)}catch(e){throw n(),e}return{execute:e=>g({op:"execute",input:e}),dispose:n}}export{U as createStaticStudentSession};

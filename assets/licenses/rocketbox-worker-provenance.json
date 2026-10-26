@@ -1,0 +1,208 @@
+{
+  "format": "energy-twin-third-party-worker-provenance/1",
+  "updatedOn": "2026-10-26",
+  "assetTitle": "Microsoft Rocketbox Construction_Male_01 adapted worker",
+  "originalCreator": "Microsoft / Rocketbox original avatar team",
+  "originalGeometryIsProjectAuthored": false,
+  "repository": "https://github.com/microsoft/Microsoft-Rocketbox",
+  "sourceCommit": "0943055db6ec570bcef9f2c8b41c9e5467c808f9",
+  "license": "MIT",
+  "copyright": "Copyright (c) 2020 Microsoft",
+  "licenseFile": "assets/licenses/Microsoft-Rocketbox-LICENSE.md",
+  "licenseSha256": "17474e386e0b9e1a700cc3d06b2b0882a2c376d9c6b49c7f8274409b8f8d2352",
+  "sources": [
+    {
+      "path": "Assets/Animations/all_animations_max_motextr_xy/m_walk_neutral.max.fbx",
+      "sourceUrl": "https://raw.githubusercontent.com/microsoft/Microsoft-Rocketbox/0943055db6ec570bcef9f2c8b41c9e5467c808f9/Assets/Animations/all_animations_max_motextr_xy/m_walk_neutral.max.fbx",
+      "gitBlobSha1": "f8816638330d02fb31920d46851188b920d66ab1",
+      "sha256": "93089851a370e3a117a6bd04c002815f7133fce41c6271e9eb448ca1228b154f",
+      "bytes": 958512
+    },
+    {
+      "path": "Assets/Avatars/Professions/Construction_Male_01/Export/Construction_Male_01_facial.fbx",
+      "sourceUrl": "https://raw.githubusercontent.com/microsoft/Microsoft-Rocketbox/0943055db6ec570bcef9f2c8b41c9e5467c808f9/Assets/Avatars/Professions/Construction_Male_01/Export/Construction_Male_01_facial.fbx",
+      "gitBlobSha1": "959d1f81fc2eeccbc6c3c2b5d25be7b50e8800b6",
+      "sha256": "5331813c4e0419429ce71fcad976d59d8aa7b366ea2f7187d2449259b61c1f0d",
+      "bytes": 2324144
+    },
+    {
+      "path": "Assets/Avatars/Professions/Construction_Male_01/Textures/m111_body_color.tga",
+      "sourceUrl": "https://raw.githubusercontent.com/microsoft/Microsoft-Rocketbox/0943055db6ec570bcef9f2c8b41c9e5467c808f9/Assets/Avatars/Professions/Construction_Male_01/Textures/m111_body_color.tga",
+      "gitBlobSha1": "ea180a862d949f5f16c1c430362ae199b8d572df",
+      "sha256": "e1936c0b0c35e6c9fa2b43734513c0c381627e1ae5c42f9ff7ee361e34a4ed0e",
+      "bytes": 12582956
+    },
+    {
+      "path": "Assets/Avatars/Professions/Construction_Male_01/Textures/m111_body_normal.tga",
+      "sourceUrl": "https://raw.githubusercontent.com/microsoft/Microsoft-Rocketbox/0943055db6ec570bcef9f2c8b41c9e5467c808f9/Assets/Avatars/Professions/Construction_Male_01/Textures/m111_body_normal.tga",
+      "gitBlobSha1": "500a390f9b8e390d153470e8272d91a48b2b8dd7",
+      "sha256": "723bdf1728b218e3a937b483756a14148e9c215ca7c14f33cd2bb12358512945",
+      "bytes": 12582956
+    },
+    {
+      "path": "Assets/Avatars/Professions/Construction_Male_01/Textures/m111_head_color.tga",
+      "sourceUrl": "https://raw.githubusercontent.com/microsoft/Microsoft-Rocketbox/0943055db6ec570bcef9f2c8b41c9e5467c808f9/Assets/Avatars/Professions/Construction_Male_01/Textures/m111_head_color.tga",
+      "gitBlobSha1": "bb0038aba62407f7823420e1a6114f8980a81888",
+      "sha256": "27b3cea6654c2ef31bc8410db9d7dc53ebacf6babf9a49dd91f26cd8e076993e",
+      "bytes": 12582956
+    },
+    {
+      "path": "Assets/Avatars/Professions/Construction_Male_01/Textures/m111_head_normal.tga",
+      "sourceUrl": "https://raw.githubusercontent.com/microsoft/Microsoft-Rocketbox/0943055db6ec570bcef9f2c8b41c9e5467c808f9/Assets/Avatars/Professions/Construction_Male_01/Textures/m111_head_normal.tga",
+      "gitBlobSha1": "e39487ceee1de795906f90fa73e7bc509e23da10",
+      "sha256": "e5147c0423011912433538c43d5d58f5c8dd1101befbbd8f462e9bb8e398a203",
+      "bytes": 12582956
+    },
+    {
+      "path": "Assets/Avatars/Professions/Construction_Male_01/Textures/m111_helmet_color.tga",
+      "sourceUrl": "https://raw.githubusercontent.com/microsoft/Microsoft-Rocketbox/0943055db6ec570bcef9f2c8b41c9e5467c808f9/Assets/Avatars/Professions/Construction_Male_01/Textures/m111_helmet_color.tga",
+      "gitBlobSha1": "45f8a87ad06cc30d215e4071b228622b1588c9e1",
+      "sha256": "b6c8690a8e110b4f3075282e2fefa2cc6004b7912952f277697c63d114dbbd8d",
+      "bytes": 6291500
+    },
+    {
+      "path": "Assets/Avatars/Professions/Construction_Male_01/Textures/m111_helmet_normal.tga",
+      "sourceUrl": "https://raw.githubusercontent.com/microsoft/Microsoft-Rocketbox/0943055db6ec570bcef9f2c8b41c9e5467c808f9/Assets/Avatars/Professions/Construction_Male_01/Textures/m111_helmet_normal.tga",
+      "gitBlobSha1": "c0e59e8c934a0a64e169b00db7c115156fe9cf67",
+      "sha256": "42e7b8cff94bd0d984d12a83ec04e11cc899d73415f2e0d56a8f3ded8308be4d",
+      "bytes": 6291500
+    },
+    {
+      "path": "Assets/Avatars/Professions/Construction_Male_01/Textures/m111_opacity_color.tga",
+      "sourceUrl": "https://raw.githubusercontent.com/microsoft/Microsoft-Rocketbox/0943055db6ec570bcef9f2c8b41c9e5467c808f9/Assets/Avatars/Professions/Construction_Male_01/Textures/m111_opacity_color.tga",
+      "gitBlobSha1": "bf2c986d67533db898c19b2e9f0e695a0043623e",
+      "sha256": "45a2ffb28682599e8a4424e0b1148eb1996b09c481882b1b0be4877fa7ecf20d",
+      "bytes": 524332
+    },
+    {
+      "path": "Assets/Avatars/Professions/Construction_Male_01/Textures/m111_opacity_normal.tga",
+      "sourceUrl": "https://raw.githubusercontent.com/microsoft/Microsoft-Rocketbox/0943055db6ec570bcef9f2c8b41c9e5467c808f9/Assets/Avatars/Professions/Construction_Male_01/Textures/m111_opacity_normal.tga",
+      "gitBlobSha1": "0abd0308bf2384bfb6b0719f8d894c4f644dc41b",
+      "sha256": "98490261100d4ea80ed06c543cfee5040005e5aab29be970045d16de93611f2e",
+      "bytes": 393260
+    },
+    {
+      "path": "Assets/Avatars/Professions/Construction_Male_01/Textures/m111_tools_color.tga",
+      "sourceUrl": "https://raw.githubusercontent.com/microsoft/Microsoft-Rocketbox/0943055db6ec570bcef9f2c8b41c9e5467c808f9/Assets/Avatars/Professions/Construction_Male_01/Textures/m111_tools_color.tga",
+      "gitBlobSha1": "ae5872a6808aa115c84aff5a5d8859ac7bedab6f",
+      "sha256": "a2c99065c0abbc80edd4f509101c003cd1c564c9887b5ec60755c0772d4466e1",
+      "bytes": 3145772
+    },
+    {
+      "path": "Assets/Avatars/Professions/Construction_Male_01/Textures/m111_tools_normal.tga",
+      "sourceUrl": "https://raw.githubusercontent.com/microsoft/Microsoft-Rocketbox/0943055db6ec570bcef9f2c8b41c9e5467c808f9/Assets/Avatars/Professions/Construction_Male_01/Textures/m111_tools_normal.tga",
+      "gitBlobSha1": "748260cd9aadd421032675eb92842564e9377935",
+      "sha256": "81ab5dfd694d0800c5704d018f7dedcf88f6abaa4cd87e077b8ab742bb6245d4",
+      "bytes": 3145772
+    },
+    {
+      "path": "LICENSE.md",
+      "sourceUrl": "https://raw.githubusercontent.com/microsoft/Microsoft-Rocketbox/0943055db6ec570bcef9f2c8b41c9e5467c808f9/LICENSE.md",
+      "gitBlobSha1": "9bcfb3ece5301a55d3a41bbd00a029ab27d61d13",
+      "sha256": "17474e386e0b9e1a700cc3d06b2b0882a2c376d9c6b49c7f8274409b8f8d2352",
+      "bytes": 1066
+    },
+    {
+      "path": "README.md",
+      "sourceUrl": "https://raw.githubusercontent.com/microsoft/Microsoft-Rocketbox/0943055db6ec570bcef9f2c8b41c9e5467c808f9/README.md",
+      "gitBlobSha1": "a23370fd4258e59784970d941bf15b53aad38924",
+      "sha256": "bcf8013e3d5817a5dee5d1770b9943278189cd76b2d9b2abc243db99b703ecd6",
+      "bytes": 5345
+    }
+  ],
+  "output": {
+    "file": "assets/3d/rocketbox-construction-worker.glb",
+    "bytes": 7701252,
+    "sha256": "e82dc83554f698294dcbc520b190fe8cecedf0ff8cfd977d2853e20d40e8f6c3",
+    "bones": 80,
+    "triangles": 10152,
+    "heightMeters": 1.7999999886640126,
+    "coordinateSystem": "glTF Y up / +Z forward",
+    "animations": [
+      "Walk",
+      "Idle"
+    ],
+    "strideMeters": 1.468642213025829,
+    "walkCycleSeconds": 1.0666666666666667,
+    "materials": 4,
+    "texturesEmbedded": true
+  },
+  "conversion": {
+    "tool": "Blender 4.5.14 LTS",
+    "script": "scripts/prepare-rocketbox-worker.py",
+    "scriptSha256": "39f183fa262b4608c7bdb0658d54257ba1d7a6b357bbb98f7e481428339148c4",
+    "authoringFile": "../energy-twin-modeling/Rocketbox-worker-adapted.blend",
+    "authoringSha256": "24d601e94453f8b027c974483dfa1d11bfa0521bf42cf7ed5cc4acd4865dd9c3",
+    "removedMorphTargets": 176,
+    "removedShieldFaces": 108,
+    "faceShieldRemoved": true,
+    "facialGeometryRetained": true,
+    "textureAdaptation": "Color maps JPEG quality 88 up to 2048px; normal maps PNG up to 1024px; body/head/helmet/tools linked to local PBR materials; detached shield opacity maps are not included in the final model.",
+    "retargeting": "same-name world-space CopyTransforms baked into avatar rest matrices, not copied local Euler channels",
+    "inPlaceMotion": "Original horizontal armature root motion removed; vertical bob and joint motion retained; walk pose sampled by recorded travel/metadata stride.",
+    "sourceAnimationFrameRange": [
+      1,
+      33
+    ],
+    "fps": 30,
+    "textures": [
+      {
+        "file": "assets/3d/rocketbox-textures/m111_body_color.jpg",
+        "width": 2048,
+        "height": 2048,
+        "bytes": 1275414,
+        "sha256": "00ee0bd4e74f43781bdf1ea552196c5da3236dbbee8ebfe5ffdb93f84193069e"
+      },
+      {
+        "file": "assets/3d/rocketbox-textures/m111_body_normal.png",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 1295853,
+        "sha256": "2928381f7b0b78792a9d677bf174400f84eae9837f0ec6a6fbe56df69c118aaa"
+      },
+      {
+        "file": "assets/3d/rocketbox-textures/m111_head_color.jpg",
+        "width": 2048,
+        "height": 2048,
+        "bytes": 849354,
+        "sha256": "de9dd603ee155e5fbecce7fdfc422cdf7888563da2fb7aa825c8f17028837455"
+      },
+      {
+        "file": "assets/3d/rocketbox-textures/m111_head_normal.png",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 1281666,
+        "sha256": "e2db9c987e9495a063b3504dc7469409c3212e00ec4e260acda8680d85c8b5a2"
+      },
+      {
+        "file": "assets/3d/rocketbox-textures/m111_helmet_color.jpg",
+        "width": 2048,
+        "height": 1024,
+        "bytes": 229550,
+        "sha256": "4bae545e115360294e24a3eae6f696bddd9e3a2fb3f10813b25894f7a4171561"
+      },
+      {
+        "file": "assets/3d/rocketbox-textures/m111_helmet_normal.png",
+        "width": 1024,
+        "height": 512,
+        "bytes": 420753,
+        "sha256": "e641a90c402a1c4708244ec9ade3a1b1d52644d8158bc7a79796dd0742e5a3e7"
+      },
+      {
+        "file": "assets/3d/rocketbox-textures/m111_tools_color.jpg",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 215208,
+        "sha256": "7376d0183f1e1e50d8ec821a6e1a79e824831994d8d0c2e363def9e0a956b0eb"
+      },
+      {
+        "file": "assets/3d/rocketbox-textures/m111_tools_normal.png",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 1414828,
+        "sha256": "538852a6d707c9407dcecc755643ceeca76bad2bc6a55d41265343c08dda2fad"
+      }
+    ]
+  },
+  "useScope": "Third-party MIT worker replaces the earlier original procedural person in the running scene. Vehicles/factory/crate remain project-authored teaching geometry. No manufacturer CAD or physical certification is implied."
+}

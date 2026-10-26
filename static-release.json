@@ -1,6 +1,6 @@
 {
   "format": "energy-twin-static-release/1",
-  "createdAt": "2026-10-22T08:50:14.084Z",
+  "createdAt": "2026-10-26T03:49:07.754Z",
   "base": "/energy-twin-lab/",
   "assistant": "Personal browser-supplied key, memory only; no shared server key",
   "files": [
@@ -8,6 +8,76 @@
       "path": ".nojekyll",
       "bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "assets/3d/energy-twin-factory-detailed.glb",
+      "bytes": 7425928,
+      "sha256": "c462c42c646d03d38740da1fae32f8329c11196dce9a4df97154027beedfb166"
+    },
+    {
+      "path": "assets/3d/energy-twin-obstacle-detailed.glb",
+      "bytes": 360356,
+      "sha256": "07340ca3d6280a7f93a7919c9d507472025c8d3f8f38ff0713e1ae045de041ba"
+    },
+    {
+      "path": "assets/3d/energy-twin-road-detailed.glb",
+      "bytes": 7573344,
+      "sha256": "b82fcc8fc3318d05cfc4bf5fc51267fdf18ae3ee903d525c4bd03bf32234e803"
+    },
+    {
+      "path": "assets/3d/energy-twin-robot-detailed.glb",
+      "bytes": 7458252,
+      "sha256": "28680940bb780108b71731c20a420f64a9d0bf8fbb201a925626668f5a35c98a"
+    },
+    {
+      "path": "assets/3d/manifest.json",
+      "bytes": 2079,
+      "sha256": "1122d8f8bc5e53764281ffc20f3aaff66ba8dcc90920600716f0bbf72ecff94a"
+    },
+    {
+      "path": "assets/3d/rocketbox-construction-worker.glb",
+      "bytes": 7701252,
+      "sha256": "e82dc83554f698294dcbc520b190fe8cecedf0ff8cfd977d2853e20d40e8f6c3"
+    },
+    {
+      "path": "assets/3d/rocketbox-textures/m111_body_color.jpg",
+      "bytes": 1275414,
+      "sha256": "00ee0bd4e74f43781bdf1ea552196c5da3236dbbee8ebfe5ffdb93f84193069e"
+    },
+    {
+      "path": "assets/3d/rocketbox-textures/m111_body_normal.png",
+      "bytes": 1295853,
+      "sha256": "2928381f7b0b78792a9d677bf174400f84eae9837f0ec6a6fbe56df69c118aaa"
+    },
+    {
+      "path": "assets/3d/rocketbox-textures/m111_head_color.jpg",
+      "bytes": 849354,
+      "sha256": "de9dd603ee155e5fbecce7fdfc422cdf7888563da2fb7aa825c8f17028837455"
+    },
+    {
+      "path": "assets/3d/rocketbox-textures/m111_head_normal.png",
+      "bytes": 1281666,
+      "sha256": "e2db9c987e9495a063b3504dc7469409c3212e00ec4e260acda8680d85c8b5a2"
+    },
+    {
+      "path": "assets/3d/rocketbox-textures/m111_helmet_color.jpg",
+      "bytes": 229550,
+      "sha256": "4bae545e115360294e24a3eae6f696bddd9e3a2fb3f10813b25894f7a4171561"
+    },
+    {
+      "path": "assets/3d/rocketbox-textures/m111_helmet_normal.png",
+      "bytes": 420753,
+      "sha256": "e641a90c402a1c4708244ec9ade3a1b1d52644d8158bc7a79796dd0742e5a3e7"
+    },
+    {
+      "path": "assets/3d/rocketbox-textures/m111_tools_color.jpg",
+      "bytes": 215208,
+      "sha256": "7376d0183f1e1e50d8ec821a6e1a79e824831994d8d0c2e363def9e0a956b0eb"
+    },
+    {
+      "path": "assets/3d/rocketbox-textures/m111_tools_normal.png",
+      "bytes": 1414828,
+      "sha256": "538852a6d707c9407dcecc755643ceeca76bad2bc6a55d41265343c08dda2fad"
     },
     {
       "path": "assets/datasets/astronaut.png",
@@ -70,9 +140,94 @@
       "sha256": "b0464b03bf00156cb2c10eb13e77b90910fe1022c07ba69685d0c61e872eca90"
     },
     {
+      "path": "assets/guides/3d/01-exterior.png",
+      "bytes": 385478,
+      "sha256": "d9b2ae0597ff90e07de7d76a4de47b73aef333cac22ec9ce69cddbf7f5cb46fa"
+    },
+    {
+      "path": "assets/guides/3d/02-interior.png",
+      "bytes": 428706,
+      "sha256": "95327fb46797944cbd9a70519d63763280501da1398fb21b35279f86968c2dcf"
+    },
+    {
+      "path": "assets/guides/3d/03-exploded.png",
+      "bytes": 404027,
+      "sha256": "418bdb8a56dce4401db7b387195a7bbc56aeb20a849ce714a30ff8dae998ec71"
+    },
+    {
+      "path": "assets/guides/3d/04-battery-drawer.png",
+      "bytes": 439130,
+      "sha256": "ba2a604b042f2b3a4b52229c1743567a6d8d7d6a8da98f44ae3529b99b54f4db"
+    },
+    {
+      "path": "assets/guides/3d/05-battery-closeup.png",
+      "bytes": 442055,
+      "sha256": "347bb1b5ab37daa4931f68f51c82eb373405d49b400b1f25650de433a8aa9124"
+    },
+    {
+      "path": "assets/guides/3d/06-sensors.png",
+      "bytes": 400562,
+      "sha256": "ff204c58e9801f3dba51db355ac09609ef203f0bd091b992e64c9e154157acac"
+    },
+    {
+      "path": "assets/guides/3d/07-factory.png",
+      "bytes": 307489,
+      "sha256": "36cbb4ba316a3534b6f65d71048084e9ee60b5e2696ec3e84ed9a56dee92f03e"
+    },
+    {
+      "path": "assets/guides/3d/08b-assembly-battery.png",
+      "bytes": 385431,
+      "sha256": "251afabfd8763162f33f920b41c837de6d799bd27ca10ce076cb23cddc348990"
+    },
+    {
+      "path": "assets/guides/3d/09-replay.png",
+      "bytes": 191084,
+      "sha256": "5d4f86861e1c32e07842b5fe19a7467f35e16b135203f546f08fd3699f419d61"
+    },
+    {
+      "path": "assets/guides/3d/09b-pedestrian.png",
+      "bytes": 316370,
+      "sha256": "7f7e87a769d5cec2d2d31a9e3198dbb41b7ac6f571f2c2e881b6613b4d2818f6"
+    },
+    {
+      "path": "assets/guides/3d/13-pause.png",
+      "bytes": 187291,
+      "sha256": "626198bee7fffb4c07a2bab3eefc1e495cbaa8058825baf8be27b61e2891ff2f"
+    },
+    {
+      "path": "assets/guides/3d/14-reset.png",
+      "bytes": 185016,
+      "sha256": "a0c5d3a8c9a97ed258ec0920bf30ba0388708348ad821ef1c775d0bd13bac7e5"
+    },
+    {
+      "path": "assets/guides/3d/worker-body.png",
+      "bytes": 202987,
+      "sha256": "801b396ff13ff11255664bb884bac26bf8a6bd1ec964bb17ed62b522bbb541a8"
+    },
+    {
+      "path": "assets/guides/3d/worker-face.png",
+      "bytes": 714210,
+      "sha256": "0fccb533dc5ac31c59df7399f7c8a5cd77434941a3bc763094fd2eca794e30b1"
+    },
+    {
+      "path": "assets/guides/3d-guide.html",
+      "bytes": 14840,
+      "sha256": "435e4e9fc0d4e52f9f9676c04429a988693b0882cd4fdd96cc2df4244745c763"
+    },
+    {
       "path": "assets/licenses/CPython-PSF.txt",
       "bytes": 13936,
       "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+    },
+    {
+      "path": "assets/licenses/Microsoft-Rocketbox-LICENSE.md",
+      "bytes": 1066,
+      "sha256": "17474e386e0b9e1a700cc3d06b2b0882a2c376d9c6b49c7f8274409b8f8d2352"
+    },
+    {
+      "path": "assets/licenses/original-3d-20261026.md",
+      "bytes": 2011,
+      "sha256": "eb244a3bcb38f5f42f831c6218fd17e015c4c0497c3a0e7245f203b9314df5a5"
     },
     {
       "path": "assets/licenses/Pyodide-MPL-2.0.txt",
@@ -88,6 +243,11 @@
       "path": "assets/licenses/react-LICENSE",
       "bytes": 1088,
       "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "assets/licenses/rocketbox-worker-provenance.json",
+      "bytes": 11177,
+      "sha256": "746121f06c65fc4b88097642594f2289fbfb5602452172368b417f031dfc53d0"
     },
     {
       "path": "assets/licenses/street-data-sources.json",
@@ -312,7 +472,7 @@
     {
       "path": "index.html",
       "bytes": 966,
-      "sha256": "11b997be09775c50a2c8aa8a9678041fb79ee51299824949cee48ad0cfad4d81"
+      "sha256": "4e1dc0e163cd7e14c21efc34dbe04a5c6db83b7c6161e53d593954b4bdcebf78"
     },
     {
       "path": "lan-guide.html",
@@ -500,14 +660,19 @@
       "sha256": "5346bba737db1f61f0ba77df31633489ceb625b434802e75ecc73b789aee29b5"
     },
     {
-      "path": "web-assets/main-CxpEOBDm.css",
-      "bytes": 69060,
-      "sha256": "5c0c6e24e9727afb66a756589ee4e7792e999086845edb91de8a8b50cc55185b"
+      "path": "web-assets/GLTFExporter-ENv--H6b.js",
+      "bytes": 35290,
+      "sha256": "86b929f86312bf3347a4a40e1a3e364fc9c05a58b942904b85b657c38131d3a5"
     },
     {
-      "path": "web-assets/main-Dus16_NY.js",
-      "bytes": 1135346,
-      "sha256": "3b689411ec6a3ecff3ecf81c6b84bf6fdf4eff1a83e13509a2cbbfbc46d930fd"
+      "path": "web-assets/main-B3d4i9BM.css",
+      "bytes": 72311,
+      "sha256": "fdd8512c859012d5facad946281548404d84e090e1e32983ea28c2496057fc3c"
+    },
+    {
+      "path": "web-assets/main-DnxDRZ4F.js",
+      "bytes": 1301238,
+      "sha256": "8ff4853061056a6fbffde17076d5c7631aef9f46f8f37fc5dcbce2b0dc36b287"
     },
     {
       "path": "web-assets/module-6F3E5H7Y-tx0BadV3.js",
@@ -535,9 +700,9 @@
       "sha256": "fcf6800181196c9be2768fb4a437fbe9445bef94e9d3c361f3cc3ef1f1f54cb4"
     },
     {
-      "path": "web-assets/staticStudentRunner-CxSJDtqc.js",
+      "path": "web-assets/staticStudentRunner-5qe7xq8o.js",
       "bytes": 4189,
-      "sha256": "721cc94b5f77b0104d8650b508d7ea4f420ec1551026827f2a518f930b88f768"
+      "sha256": "6b7158262f44d7875cebc939001d560568e46ad7e59e17b552076bf4771e8e9c"
     },
     {
       "path": "web-assets/student.worker-Bf0T6mtw.js",
@@ -550,6 +715,6 @@
       "sha256": "ffb8ae68fda0222e47efaa14ab3bc0920ea18a35a4df842fb0b5aac067e28639"
     }
   ],
-  "totalBytes": 160250703,
+  "totalBytes": 202977903,
   "privateDataIncluded": false
 }

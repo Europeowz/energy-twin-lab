@@ -1,0 +1,58 @@
+{
+  "format": "energy-twin-original-3d/2",
+  "createdAt": "2026-10-26T03:38:48.259Z",
+  "units": "meters",
+  "source": "Original parameterized vehicle/factory/obstacle models; Microsoft Rocketbox MIT licensed worker and walk adapted with Blender; Three.js r180",
+  "scope": "Teaching geometry with named mechanical hierarchy; does not represent manufacturer CAD or physical certification",
+  "assets": [
+    {
+      "kind": "robot",
+      "file": "energy-twin-robot-detailed.glb",
+      "bytes": 7458252,
+      "sha256": "28680940bb780108b71731c20a420f64a9d0bf8fbb201a925626668f5a35c98a",
+      "editableNamedMeshes": 377,
+      "instancedDetails": 214,
+      "components": 574
+    },
+    {
+      "kind": "road",
+      "file": "energy-twin-road-detailed.glb",
+      "bytes": 7573344,
+      "sha256": "b82fcc8fc3318d05cfc4bf5fc51267fdf18ae3ee903d525c4bd03bf32234e803",
+      "editableNamedMeshes": 381,
+      "instancedDetails": 214,
+      "components": 578
+    },
+    {
+      "kind": "factory",
+      "file": "energy-twin-factory-detailed.glb",
+      "bytes": 7425928,
+      "sha256": "c462c42c646d03d38740da1fae32f8329c11196dce9a4df97154027beedfb166",
+      "editableNamedMeshes": 67,
+      "instancedDetails": 0,
+      "components": 940
+    },
+    {
+      "kind": "worker",
+      "file": "rocketbox-construction-worker.glb",
+      "bytes": 7701252,
+      "sha256": "e82dc83554f698294dcbc520b190fe8cecedf0ff8cfd977d2853e20d40e8f6c3",
+      "editableNamedMeshes": 1,
+      "instancedDetails": 0,
+      "components": null,
+      "license": "MIT",
+      "source": "https://github.com/microsoft/Microsoft-Rocketbox",
+      "attribution": "Copyright (c) 2020 Microsoft",
+      "adaptation": "Blender retargeted in-place Walk/Idle, compressed textures, removed facial morphs and face shield"
+    },
+    {
+      "kind": "obstacle",
+      "file": "energy-twin-obstacle-detailed.glb",
+      "bytes": 360356,
+      "sha256": "07340ca3d6280a7f93a7919c9d507472025c8d3f8f38ff0713e1ae045de041ba",
+      "editableNamedMeshes": 4,
+      "instancedDetails": 0,
+      "components": 40
+    }
+  ]
+}
